@@ -5,11 +5,11 @@
         <h1>Basketball Dunking Articles</h1>
         <p>Scientific insights and expert advice on vertical jumping and dunking</p>
       </div>
-      
+
       <div class="articles-filter">
         <div class="filter-options">
-          <button 
-            v-for="category in categories" 
+          <button
+            v-for="category in categories"
             :key="category.id"
             :class="['filter-btn', { active: activeCategory === category.id }]"
             @click="filterByCategory(category.id)"
@@ -17,12 +17,12 @@
             {{ category.name }}
           </button>
         </div>
-        
+
         <div class="search-box">
-          <input 
-            type="text" 
-            v-model="searchQuery" 
-            placeholder="Search articles..." 
+          <input
+            type="text"
+            v-model="searchQuery"
+            placeholder="Search articles..."
             @input="filterArticles"
           >
           <button class="search-btn">
@@ -30,11 +30,11 @@
           </button>
         </div>
       </div>
-      
+
       <div class="articles-grid">
-        <div 
-          v-for="article in filteredArticles" 
-          :key="article.id" 
+        <div
+          v-for="article in filteredArticles"
+          :key="article.id"
           class="article-card"
         >
           <div class="article-image">
@@ -54,24 +54,24 @@
           </div>
         </div>
       </div>
-      
+
       <div v-if="filteredArticles.length === 0" class="no-results">
         <p>No articles found matching your search criteria.</p>
         <button class="btn btn-secondary" @click="resetFilters">Reset Filters</button>
       </div>
-      
+
       <div class="pagination" v-if="totalPages > 1">
-        <button 
-          class="pagination-btn" 
+        <button
+          class="pagination-btn"
           :disabled="currentPage === 1"
           @click="changePage(currentPage - 1)"
         >
           Previous
         </button>
-        
+
         <div class="pagination-numbers">
-          <button 
-            v-for="page in paginationNumbers" 
+          <button
+            v-for="page in paginationNumbers"
             :key="page"
             :class="['page-number', { active: currentPage === page }]"
             @click="changePage(page)"
@@ -79,9 +79,9 @@
             {{ page }}
           </button>
         </div>
-        
-        <button 
-          class="pagination-btn" 
+
+        <button
+          class="pagination-btn"
           :disabled="currentPage === totalPages"
           @click="changePage(currentPage + 1)"
         >
@@ -102,7 +102,7 @@ export default {
           id: 'vertical-jump-science',
           title: 'The Science of Vertical Jump: Biomechanics and Physics',
           excerpt: 'Explore the scientific principles behind an explosive vertical jump, including muscle activation, force production, and energy transfer.',
-          image: require('../assets/article1.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'science',
           date: '2023-06-15',
           readTime: 8
@@ -111,7 +111,7 @@ export default {
           id: 'nba-dunkers',
           title: 'NBA Dunkers Analysis: Physical Attributes of Elite Dunkers',
           excerpt: 'A data-driven analysis of the physical attributes and vertical jump metrics of the NBA\'s most impressive dunkers.',
-          image: require('../assets/article2.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'analysis',
           date: '2023-07-22',
           readTime: 10
@@ -120,7 +120,7 @@ export default {
           id: 'plyometric-training',
           title: 'Plyometric Training Guide for Basketball Players',
           excerpt: 'Comprehensive guide to plyometric exercises that can significantly improve your vertical jump and dunking ability.',
-          image: require('../assets/article3.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'training',
           date: '2023-08-05',
           readTime: 12
@@ -129,7 +129,7 @@ export default {
           id: 'dunking-techniques',
           title: 'Mastering Different Dunking Techniques',
           excerpt: 'Learn the mechanics and techniques behind various types of dunks, from basic one-handed dunks to advanced windmills and 360s.',
-          image: require('../assets/article4.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'techniques',
           date: '2023-09-10',
           readTime: 9
@@ -138,7 +138,7 @@ export default {
           id: 'vertical-jump-nutrition',
           title: 'Nutrition for Vertical Jump: Fueling for Explosive Power',
           excerpt: 'How to optimize your diet to support muscle growth, energy production, and recovery for maximum vertical jump gains.',
-          image: require('../assets/article5.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'nutrition',
           date: '2023-10-18',
           readTime: 7
@@ -147,7 +147,7 @@ export default {
           id: 'short-dunkers',
           title: 'Short Dunkers: How Players Under 6 Feet Can Dunk',
           excerpt: 'Success stories and training strategies from basketball players under 6 feet who have achieved impressive dunking abilities.',
-          image: require('../assets/article6.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'inspiration',
           date: '2023-11-05',
           readTime: 8
@@ -171,44 +171,44 @@ export default {
   computed: {
     filteredArticles() {
       let filtered = [...this.articles]
-      
+
       // Filter by category
       if (this.activeCategory !== 'all') {
         filtered = filtered.filter(article => article.category === this.activeCategory)
       }
-      
+
       // Filter by search query
       if (this.searchQuery.trim() !== '') {
         const query = this.searchQuery.toLowerCase()
-        filtered = filtered.filter(article => 
-          article.title.toLowerCase().includes(query) || 
+        filtered = filtered.filter(article =>
+          article.title.toLowerCase().includes(query) ||
           article.excerpt.toLowerCase().includes(query)
         )
       }
-      
+
       // Apply pagination
       const startIndex = (this.currentPage - 1) * this.articlesPerPage
       const endIndex = startIndex + this.articlesPerPage
-      
+
       return filtered.slice(startIndex, endIndex)
     },
     totalFilteredArticles() {
       let filtered = [...this.articles]
-      
+
       // Filter by category
       if (this.activeCategory !== 'all') {
         filtered = filtered.filter(article => article.category === this.activeCategory)
       }
-      
+
       // Filter by search query
       if (this.searchQuery.trim() !== '') {
         const query = this.searchQuery.toLowerCase()
-        filtered = filtered.filter(article => 
-          article.title.toLowerCase().includes(query) || 
+        filtered = filtered.filter(article =>
+          article.title.toLowerCase().includes(query) ||
           article.excerpt.toLowerCase().includes(query)
         )
       }
-      
+
       return filtered.length
     },
     totalPages() {
@@ -217,7 +217,7 @@ export default {
     paginationNumbers() {
       const pages = []
       const maxVisiblePages = 5
-      
+
       if (this.totalPages <= maxVisiblePages) {
         // Show all pages if total pages is less than max visible
         for (let i = 1; i <= this.totalPages; i++) {
@@ -226,37 +226,37 @@ export default {
       } else {
         // Always show first page
         pages.push(1)
-        
+
         // Calculate start and end of visible pages
         let start = Math.max(2, this.currentPage - 1)
         let end = Math.min(this.totalPages - 1, this.currentPage + 1)
-        
+
         // Adjust if at the beginning or end
         if (this.currentPage <= 2) {
           end = 4
         } else if (this.currentPage >= this.totalPages - 1) {
           start = this.totalPages - 3
         }
-        
+
         // Add ellipsis if needed
         if (start > 2) {
           pages.push('...')
         }
-        
+
         // Add middle pages
         for (let i = start; i <= end; i++) {
           pages.push(i)
         }
-        
+
         // Add ellipsis if needed
         if (end < this.totalPages - 1) {
           pages.push('...')
         }
-        
+
         // Always show last page
         pages.push(this.totalPages)
       }
-      
+
       return pages
     }
   },
@@ -529,15 +529,15 @@ export default {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .search-box {
     width: 100%;
   }
-  
+
   .search-box input {
     width: 100%;
   }
-  
+
   .search-box input:focus {
     width: 100%;
   }

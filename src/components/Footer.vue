@@ -20,7 +20,7 @@
             </a>
           </div>
         </div>
-        
+
         <div class="footer-section">
           <h3>Quick Links</h3>
           <ul class="footer-links">
@@ -31,7 +31,7 @@
             <li><router-link to="/about">About</router-link></li>
           </ul>
         </div>
-        
+
         <div class="footer-section">
           <h3>Resources</h3>
           <ul class="footer-links">
@@ -41,19 +41,19 @@
             <li><router-link to="/articles/nba-dunkers">NBA Dunkers Analysis</router-link></li>
           </ul>
         </div>
-        
+
         <div class="footer-section">
           <h3>Contact Us</h3>
           <p>Have questions or suggestions? We'd love to hear from you!</p>
           <a href="mailto:contact@dunkcalculator.com" class="contact-link">contact@dunkcalculator.com</a>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p>&copy; {{ currentYear }} Dunk Calculator. All rights reserved.</p>
         <div class="footer-bottom-links">
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/terms-of-service">Terms of Service</a>
+          <router-link to="/privacy-policy">Privacy Policy</router-link>
+          <router-link to="/terms-of-service">Terms of Service</router-link>
         </div>
       </div>
     </div>
@@ -183,12 +183,12 @@ export default {
   .footer-content {
     flex-direction: column;
   }
-  
+
   .footer-section {
     width: 100%;
     padding-right: 0;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;

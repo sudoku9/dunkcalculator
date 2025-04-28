@@ -5,13 +5,13 @@
         <div class="loading-spinner"></div>
         <p>Loading article...</p>
       </div>
-      
+
       <div v-else-if="error" class="error-container">
         <h2>Article Not Found</h2>
         <p>{{ error }}</p>
         <router-link to="/articles" class="btn btn-secondary">Back to Articles</router-link>
       </div>
-      
+
       <div v-else class="article-content">
         <div class="article-header">
           <div class="article-category">{{ article.category }}</div>
@@ -31,44 +31,44 @@
             </div>
           </div>
         </div>
-        
+
         <div class="article-featured-image">
           <img :src="article.image" :alt="article.title">
         </div>
-        
+
         <div class="article-body">
           <div v-for="(section, index) in article.content" :key="index" class="article-section">
             <h2 v-if="section.title" class="section-title">{{ section.title }}</h2>
             <p v-if="section.text" class="section-text" v-html="section.text"></p>
-            
+
             <ul v-if="section.list" class="section-list">
               <li v-for="(item, i) in section.list" :key="i">{{ item }}</li>
             </ul>
-            
+
             <div v-if="section.image" class="section-image">
               <img :src="section.image.src" :alt="section.image.alt">
               <p v-if="section.image.caption" class="image-caption">{{ section.image.caption }}</p>
             </div>
-            
+
             <div v-if="section.quote" class="section-quote">
               <blockquote>
                 <p>{{ section.quote.text }}</p>
                 <cite v-if="section.quote.author">— {{ section.quote.author }}</cite>
               </blockquote>
             </div>
-            
+
             <div v-if="section.video" class="section-video">
-              <iframe 
-                :src="section.video.src" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              <iframe
+                :src="section.video.src"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
               <p v-if="section.video.caption" class="video-caption">{{ section.video.caption }}</p>
             </div>
           </div>
         </div>
-        
+
         <div class="article-author">
           <div class="author-image">
             <img :src="article.author.image" :alt="article.author.name">
@@ -78,7 +78,7 @@
             <p>{{ article.author.bio }}</p>
           </div>
         </div>
-        
+
         <div class="article-share">
           <h3>Share this article</h3>
           <div class="share-buttons">
@@ -96,7 +96,7 @@
             </a>
           </div>
         </div>
-        
+
         <div class="related-articles">
           <h3>Related Articles</h3>
           <div class="related-articles-grid">
@@ -112,14 +112,14 @@
             </div>
           </div>
         </div>
-        
+
         <div class="article-navigation">
           <router-link v-if="prevArticle" :to="'/articles/' + prevArticle.id" class="nav-link prev">
             <span class="nav-direction">Previous Article</span>
             <span class="nav-title">{{ prevArticle.title }}</span>
           </router-link>
           <div v-else class="nav-link disabled"></div>
-          
+
           <router-link v-if="nextArticle" :to="'/articles/' + nextArticle.id" class="nav-link next">
             <span class="nav-direction">Next Article</span>
             <span class="nav-title">{{ nextArticle.title }}</span>
@@ -144,7 +144,7 @@ export default {
           id: 'vertical-jump-science',
           title: 'The Science of Vertical Jump: Biomechanics and Physics',
           excerpt: 'Explore the scientific principles behind an explosive vertical jump, including muscle activation, force production, and energy transfer.',
-          image: require('../assets/article1.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'Science',
           date: '2023-06-15',
           readTime: 8,
@@ -152,7 +152,7 @@ export default {
           author: {
             name: 'Dr. Michael Johnson',
             bio: 'Sports Biomechanics Researcher and former NCAA Division I basketball player with a PhD in Exercise Physiology.',
-            image: require('../assets/author1.jpg')
+            image: require('../assets/placeholder.svg')
           },
           content: [
             {
@@ -180,7 +180,7 @@ export default {
             },
             {
               image: {
-                src: require('../assets/jump-phases.jpg'),
+                src: require('../assets/placeholder.svg'),
                 alt: 'Phases of a vertical jump',
                 caption: 'The four main phases of a vertical jump: preparation, countermovement, propulsion, and flight.'
               }
@@ -200,8 +200,8 @@ export default {
             },
             {
               quote: {
-                text: "The vertical jump is not just about leg strength - it is about how efficiently you can coordinate all the muscles in your body to work together in a split second.",
-                author: "Dr. Peter Vint, Sports Biomechanist"
+                text: "The vertical jump is not just about leg strength—it's about how efficiently you can coordinate all the muscles in your body to work together in a split second.",
+                author: 'Dr. Peter Vint, Sports Biomechanist'
               }
             },
             {
@@ -209,7 +209,7 @@ export default {
               text: 'One of the most important concepts in vertical jump performance is the stretch-shortening cycle (SSC). This is a natural mechanism where a muscle that is stretched immediately before contraction will contract more forcefully than a muscle that begins contracting from a resting state.'
             },
             {
-              text: 'This is why the countermovement (the quick dip before jumping) is so important - it stretches the leg muscles, storing elastic energy that can be released during the upward phase of the jump, increasing the force production by 20-30%.'
+              text: "This is why the countermovement (the quick dip before jumping) is so important—it stretches the leg muscles, storing elastic energy that can be released during the upward phase of the jump, increasing the force production by 20-30%."
             },
             {
               video: {
@@ -245,7 +245,7 @@ export default {
             },
             {
               title: 'Conclusion',
-              text: "The vertical jump is a fascinating display of human athletic ability that combines physics, biomechanics, and physiology. By understanding the scientific principles behind jumping, basketball players can train more effectively and maximize their vertical leap potential. Whether you are trying to touch the rim for the first time or aiming to throw down spectacular dunks, the science of vertical jumping provides the blueprint for improvement."
+              text: "The vertical jump is a fascinating display of human athletic ability that combines physics, biomechanics, and physiology. By understanding the scientific principles behind jumping, basketball players can train more effectively and maximize their vertical leap potential. Whether you're trying to touch the rim for the first time or aiming to throw down spectacular dunks, the science of vertical jumping provides the blueprint for improvement."
             }
           ]
         },
@@ -253,7 +253,7 @@ export default {
           id: 'nba-dunkers',
           title: 'NBA Dunkers Analysis: Physical Attributes of Elite Dunkers',
           excerpt: 'A data-driven analysis of the physical attributes and vertical jump metrics of the NBA\'s most impressive dunkers.',
-          image: require('../assets/article2.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'Analysis',
           date: '2023-07-22',
           readTime: 10,
@@ -261,7 +261,7 @@ export default {
           author: {
             name: 'James Wilson',
             bio: 'Basketball analyst and former college player with expertise in sports statistics and performance metrics.',
-            image: require('../assets/author2.jpg')
+            image: require('../assets/placeholder.svg')
           },
           content: [
             {
@@ -275,7 +275,7 @@ export default {
           id: 'plyometric-training',
           title: 'Plyometric Training Guide for Basketball Players',
           excerpt: 'Comprehensive guide to plyometric exercises that can significantly improve your vertical jump and dunking ability.',
-          image: require('../assets/article3.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'Training',
           date: '2023-08-05',
           readTime: 12,
@@ -283,7 +283,7 @@ export default {
           author: {
             name: 'Coach Sarah Thompson',
             bio: 'Certified strength and conditioning specialist with 15 years of experience training basketball players at all levels.',
-            image: require('../assets/author3.jpg')
+            image: require('../assets/placeholder.svg')
           },
           content: [
             {
@@ -297,7 +297,7 @@ export default {
           id: 'dunking-techniques',
           title: 'Mastering Different Dunking Techniques',
           excerpt: 'Learn the mechanics and techniques behind various types of dunks, from basic one-handed dunks to advanced windmills and 360s.',
-          image: require('../assets/article4.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'Techniques',
           date: '2023-09-10',
           readTime: 9,
@@ -305,7 +305,7 @@ export default {
           author: {
             name: 'Marcus Johnson',
             bio: 'Former professional basketball player and dunk contest champion with expertise in advanced dunking techniques.',
-            image: require('../assets/author4.jpg')
+            image: require('../assets/placeholder.svg')
           },
           content: [
             {
@@ -319,7 +319,7 @@ export default {
           id: 'vertical-jump-nutrition',
           title: 'Nutrition for Vertical Jump: Fueling for Explosive Power',
           excerpt: 'How to optimize your diet to support muscle growth, energy production, and recovery for maximum vertical jump gains.',
-          image: require('../assets/article5.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'Nutrition',
           date: '2023-10-18',
           readTime: 7,
@@ -327,7 +327,7 @@ export default {
           author: {
             name: 'Dr. Lisa Chen',
             bio: 'Sports nutritionist with a PhD in Exercise Physiology and specialization in performance nutrition for basketball players.',
-            image: require('../assets/author5.jpg')
+            image: require('../assets/placeholder.svg')
           },
           content: [
             {
@@ -341,7 +341,7 @@ export default {
           id: 'short-dunkers',
           title: 'Short Dunkers: How Players Under 6 Feet Can Dunk',
           excerpt: 'Success stories and training strategies from basketball players under 6 feet who have achieved impressive dunking abilities.',
-          image: require('../assets/article6.jpg'),
+          image: require('../assets/placeholder.svg'),
           category: 'Inspiration',
           date: '2023-11-05',
           readTime: 8,
@@ -349,7 +349,7 @@ export default {
           author: {
             name: 'Tony Rodriguez',
             bio: '5\'10" professional basketball trainer who specializes in helping shorter players develop their vertical jump and dunking ability.',
-            image: require('../assets/author6.jpg')
+            image: require('../assets/placeholder.svg')
           },
           content: [
             {
@@ -365,7 +365,7 @@ export default {
   computed: {
     relatedArticles() {
       if (!this.article) return []
-      
+
       // Find articles in the same category, excluding the current article
       return this.articles
         .filter(a => a.id !== this.article.id && a.category === this.article.category)
@@ -373,13 +373,13 @@ export default {
     },
     prevArticle() {
       if (!this.article) return null
-      
+
       const currentIndex = this.articles.findIndex(a => a.id === this.article.id)
       return currentIndex > 0 ? this.articles[currentIndex - 1] : null
     },
     nextArticle() {
       if (!this.article) return null
-      
+
       const currentIndex = this.articles.findIndex(a => a.id === this.article.id)
       return currentIndex < this.articles.length - 1 ? this.articles[currentIndex + 1] : null
     }
@@ -414,14 +414,14 @@ export default {
   created() {
     // Get article ID from route params
     const articleId = this.$route.params.id
-    
+
     // Find the article in our data
     const article = this.articles.find(a => a.id === articleId)
-    
+
     if (article) {
       this.article = article
       this.loading = false
-      
+
       // Update page title
       document.title = `${article.title} | Dunk Calculator`
     } else {
@@ -815,39 +815,39 @@ export default {
   .article-title {
     font-size: 2rem;
   }
-  
+
   .article-meta {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .section-video iframe {
     height: 250px;
   }
-  
+
   .article-author {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .author-image {
     margin-right: 0;
     margin-bottom: 15px;
   }
-  
+
   .share-buttons {
     flex-wrap: wrap;
   }
-  
+
   .article-navigation {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .nav-link.prev, .nav-link.next {
     margin: 0;
   }
-  
+
   .nav-link.next {
     text-align: left;
   }

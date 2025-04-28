@@ -5,7 +5,7 @@
         <h1>About Dunk Calculator</h1>
         <p>Our mission, science, and the team behind the most advanced basketball dunk calculator</p>
       </div>
-      
+
       <div class="about-section mission-section">
         <div class="section-content">
           <h2>Our Mission</h2>
@@ -23,7 +23,7 @@
           <img src="../assets/mission.svg" alt="Basketball player reaching for the rim">
         </div>
       </div>
-      
+
       <div class="about-section science-section">
         <div class="section-image">
           <img src="../assets/science.svg" alt="Scientific analysis of vertical jump">
@@ -47,7 +47,7 @@
           </p>
         </div>
       </div>
-      
+
       <div class="about-section team-section">
         <div class="section-content">
           <h2>Our Team</h2>
@@ -55,11 +55,11 @@
             Dunk Calculator was created by a team of basketball enthusiasts, sports scientists, and web developers who share a passion for the game and a commitment to helping players reach their full potential.
           </p>
         </div>
-        
+
         <div class="team-grid">
           <div class="team-member">
             <div class="member-image">
-              <img src="../assets/team1.jpg" alt="Dr. James Wilson">
+              <img src="../assets/placeholder.svg" alt="Dr. James Wilson">
             </div>
             <h3>Dr. James Wilson</h3>
             <p class="member-title">Sports Biomechanist</p>
@@ -67,10 +67,10 @@
               PhD in Biomechanics with 15 years of experience studying vertical jump performance in athletes. Former college basketball player.
             </p>
           </div>
-          
+
           <div class="team-member">
             <div class="member-image">
-              <img src="../assets/team2.jpg" alt="Coach Sarah Thompson">
+              <img src="../assets/placeholder.svg" alt="Coach Sarah Thompson">
             </div>
             <h3>Coach Sarah Thompson</h3>
             <p class="member-title">Vertical Jump Specialist</p>
@@ -78,10 +78,10 @@
               Certified strength and conditioning coach who has helped hundreds of basketball players improve their vertical jump and achieve their first dunk.
             </p>
           </div>
-          
+
           <div class="team-member">
             <div class="member-image">
-              <img src="../assets/team3.jpg" alt="Michael Chen">
+              <img src="../assets/placeholder.svg" alt="Michael Chen">
             </div>
             <h3>Michael Chen</h3>
             <p class="member-title">Data Scientist</p>
@@ -89,10 +89,10 @@
               Specializes in sports analytics and developing predictive models for athletic performance. Passionate basketball player and stats enthusiast.
             </p>
           </div>
-          
+
           <div class="team-member">
             <div class="member-image">
-              <img src="../assets/team4.jpg" alt="Alex Rodriguez">
+              <img src="../assets/placeholder.svg" alt="Alex Rodriguez">
             </div>
             <h3>Alex Rodriguez</h3>
             <p class="member-title">Web Developer</p>
@@ -102,10 +102,10 @@
           </div>
         </div>
       </div>
-      
+
       <div class="about-section testimonials-section">
         <h2>What Users Are Saying</h2>
-        
+
         <div class="testimonials-slider">
           <div class="testimonial">
             <div class="testimonial-content">
@@ -113,7 +113,7 @@
             </div>
             <div class="testimonial-author">
               <div class="author-image">
-                <img src="../assets/testimonial1.jpg" alt="Jason K.">
+                <img src="../assets/placeholder.svg" alt="Jason K.">
               </div>
               <div class="author-info">
                 <h4>Jason K.</h4>
@@ -121,14 +121,14 @@
               </div>
             </div>
           </div>
-          
+
           <div class="testimonial">
             <div class="testimonial-content">
               <p>"As a shorter player at 5'9", I never thought dunking was possible for me. The personalized training program from Dunk Calculator helped me gain 8 inches on my vertical in just 3 months. I can now dunk with one hand!"</p>
             </div>
             <div class="testimonial-author">
               <div class="author-image">
-                <img src="../assets/testimonial2.jpg" alt="Marcus T.">
+                <img src="../assets/placeholder.svg" alt="Marcus T.">
               </div>
               <div class="author-info">
                 <h4>Marcus T.</h4>
@@ -136,14 +136,14 @@
               </div>
             </div>
           </div>
-          
+
           <div class="testimonial">
             <div class="testimonial-content">
               <p>"I use the Dunk Calculator with all my athletes. The scientific approach and detailed metrics have helped me create more effective training programs. My players are seeing faster results than ever before."</p>
             </div>
             <div class="testimonial-author">
               <div class="author-image">
-                <img src="../assets/testimonial3.jpg" alt="Coach Williams">
+                <img src="../assets/placeholder.svg" alt="Coach Williams">
               </div>
               <div class="author-info">
                 <h4>Coach Williams</h4>
@@ -153,10 +153,10 @@
           </div>
         </div>
       </div>
-      
+
       <div class="about-section faq-section">
         <h2>Frequently Asked Questions</h2>
-        
+
         <div class="faq-item" v-for="(faq, index) in faqs" :key="index">
           <div class="faq-question" @click="toggleFaq(index)">
             <h3>{{ faq.question }}</h3>
@@ -167,18 +167,18 @@
           </div>
         </div>
       </div>
-      
+
       <div class="about-section contact-section">
         <h2>Contact Us</h2>
         <p>Have questions, suggestions, or feedback? We'd love to hear from you!</p>
-        
+
         <div class="contact-methods">
           <div class="contact-method">
             <div class="contact-icon">✉️</div>
             <h3>Email</h3>
             <p><a href="mailto:contact@dunkcalculator.com">contact@dunkcalculator.com</a></p>
           </div>
-          
+
           <div class="contact-method">
             <div class="contact-icon">📱</div>
             <h3>Social Media</h3>
@@ -558,7 +558,7 @@ export default {
   .mission-section, .science-section {
     flex-direction: column;
   }
-  
+
   .science-section .section-image {
     order: -1;
   }
@@ -568,15 +568,15 @@ export default {
   .about-page {
     padding: 40px 0;
   }
-  
+
   .page-header h1 {
     font-size: 2rem;
   }
-  
+
   .about-section h2 {
     font-size: 1.8rem;
   }
-  
+
   .testimonials-slider {
     flex-direction: column;
   }

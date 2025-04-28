@@ -7,6 +7,8 @@ import TrainingGuide from './views/TrainingGuide.vue'
 import Articles from './views/Articles.vue'
 import ArticleDetail from './views/ArticleDetail.vue'
 import About from './views/About.vue'
+import PrivacyPolicy from './views/PrivacyPolicy.vue'
+import TermsOfService from './views/TermsOfService.vue'
 
 const routes = [
   {
@@ -55,6 +57,22 @@ const routes = [
     component: About,
     meta: {
       title: 'About Dunk Calculator | Our Mission and Science'
+    }
+  },
+  {
+    path: '/privacy-policy',
+    name: 'PrivacyPolicy',
+    component: PrivacyPolicy,
+    meta: {
+      title: 'Privacy Policy | Dunk Calculator'
+    }
+  },
+  {
+    path: '/terms-of-service',
+    name: 'TermsOfService',
+    component: TermsOfService,
+    meta: {
+      title: 'Terms of Service | Dunk Calculator'
     }
   }
 ]
