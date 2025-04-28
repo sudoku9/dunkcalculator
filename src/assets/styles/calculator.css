@@ -1,0 +1,142 @@
+.calculator-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .measurement-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #4A90E2;
+    outline: none;
+  }
+  
+  .unit-toggle {
+    position: absolute;
+    right: 8px;
+    top: 32px;
+    display: flex;
+    gap: 4px;
+  }
+  
+  .unit-toggle button {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .unit-toggle button.active {
+    background: #4A90E2;
+    color: white;
+    border-color: #4A90E2;
+  }
+  
+  .calculate-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .calculate-btn:hover {
+    background: #357ABD;
+  }
+  
+  .results-section {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+  }
+  
+  .result-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .probability {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #4A90E2;
+    margin: 1rem 0;
+  }
+  
+  .detailed-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .result-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .training-recommendations {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .training-recommendations ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .training-recommendations li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  @media (max-width: 768px) {
+    .calculator-container {
+      padding: 1rem;
+    }
+    
+    .detailed-results {
+      grid-template-columns: 1fr;
+    }
+  }
