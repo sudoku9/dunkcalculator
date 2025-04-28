@@ -16,44 +16,44 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Features Section -->
     <section class="features section">
       <div class="container">
         <h2 class="section-title">Advanced Features</h2>
         <p class="section-subtitle">Our dunk calculator goes beyond basic measurements to provide comprehensive analysis</p>
-        
+
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">📊</div>
             <h3>Vertical Jump Analysis</h3>
             <p>Calculate your current vertical jump and how much more you need to dunk successfully</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">🔍</div>
             <h3>Precision Metrics</h3>
             <p>Advanced physics calculations including hang time, jumping energy, and optimal takeoff point</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">📈</div>
             <h3>Data Visualization</h3>
             <p>Interactive charts and graphs to visualize your dunking potential and progress</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">🏋️</div>
             <h3>Training Recommendations</h3>
             <p>Personalized training programs based on your specific measurements and goals</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
             <h3>Dunk Type Suggestions</h3>
             <p>Recommendations for dunk types that match your physical attributes and abilities</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon">🧠</div>
             <h3>Scientific Approach</h3>
@@ -62,13 +62,13 @@
         </div>
       </div>
     </section>
-    
+
     <!-- How It Works Section -->
     <section class="how-it-works section">
       <div class="container">
         <h2 class="section-title">How It Works</h2>
         <p class="section-subtitle">Our calculator uses advanced algorithms to analyze your dunking potential</p>
-        
+
         <div class="steps">
           <div class="step">
             <div class="step-number">1</div>
@@ -77,7 +77,7 @@
               <p>Input your height, weight, standing reach, and other physical measurements</p>
             </div>
           </div>
-          
+
           <div class="step">
             <div class="step-number">2</div>
             <div class="step-content">
@@ -85,7 +85,7 @@
               <p>Include details like takeoff angle, core strength, and other factors for more precise results</p>
             </div>
           </div>
-          
+
           <div class="step">
             <div class="step-number">3</div>
             <div class="step-content">
@@ -93,7 +93,7 @@
               <p>Receive a comprehensive analysis of your dunking potential with detailed metrics</p>
             </div>
           </div>
-          
+
           <div class="step">
             <div class="step-number">4</div>
             <div class="step-content">
@@ -102,19 +102,19 @@
             </div>
           </div>
         </div>
-        
+
         <div class="cta-container">
           <router-link to="/calculator" class="btn">Start Your Analysis Now</router-link>
         </div>
       </div>
     </section>
-    
+
     <!-- Testimonials Section -->
     <section class="testimonials section">
       <div class="container">
         <h2 class="section-title">Success Stories</h2>
         <p class="section-subtitle">See how our calculator has helped basketball players achieve their dunking goals</p>
-        
+
         <div class="testimonials-slider">
           <div class="testimonial">
             <div class="testimonial-content">
@@ -130,7 +130,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="testimonial">
             <div class="testimonial-content">
               <p>"The advanced metrics helped me understand exactly what I needed to improve. The training recommendations were spot on, and I'm now dunking with both hands!"</p>
@@ -145,14 +145,14 @@
               </div>
             </div>
           </div>
-          
+
           <div class="testimonial">
             <div class="testimonial-content">
               <p>"As a coach, I use this calculator with all my players. The scientific approach and detailed analysis have helped my team improve their vertical jumps by an average of 4 inches!"</p>
             </div>
             <div class="testimonial-author">
               <div class="author-image">
-                <img src="../assets/testimonial3.jpg" alt="Coach Wilson" />
+                <img src="../assets/placeholder.svg" alt="Coach Wilson" />
               </div>
               <div class="author-info">
                 <h4>Coach Wilson</h4>
@@ -163,17 +163,17 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Articles Preview Section -->
     <section class="articles-preview section">
       <div class="container">
         <h2 class="section-title">Basketball Dunking Science</h2>
         <p class="section-subtitle">Learn from our collection of scientific articles about vertical jumping and dunking</p>
-        
+
         <div class="articles-grid">
           <div class="article-card">
             <div class="article-image">
-              <img src="../assets/article1.jpg" alt="The Science of Vertical Jump" />
+              <img src="../assets/placeholder.svg" alt="The Science of Vertical Jump" />
             </div>
             <div class="article-content">
               <h3>The Science of Vertical Jump</h3>
@@ -181,10 +181,10 @@
               <router-link to="/articles/vertical-jump-science" class="article-link">Read More</router-link>
             </div>
           </div>
-          
+
           <div class="article-card">
             <div class="article-image">
-              <img src="../assets/article2.jpg" alt="NBA Dunkers Analysis" />
+              <img src="../assets/placeholder.svg" alt="NBA Dunkers Analysis" />
             </div>
             <div class="article-content">
               <h3>NBA Dunkers Analysis</h3>
@@ -192,10 +192,10 @@
               <router-link to="/articles/nba-dunkers" class="article-link">Read More</router-link>
             </div>
           </div>
-          
+
           <div class="article-card">
             <div class="article-image">
-              <img src="../assets/article3.jpg" alt="Plyometric Training Guide" />
+              <img src="../assets/placeholder.svg" alt="Plyometric Training Guide" />
             </div>
             <div class="article-content">
               <h3>Plyometric Training Guide</h3>
@@ -204,13 +204,13 @@
             </div>
           </div>
         </div>
-        
+
         <div class="cta-container">
           <router-link to="/articles" class="btn btn-secondary">View All Articles</router-link>
         </div>
       </div>
     </section>
-    
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
@@ -569,19 +569,19 @@ export default {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .hero-content {
     margin-bottom: 40px;
   }
-  
+
   .hero-buttons {
     justify-content: center;
   }
-  
+
   .hero-image {
     justify-content: center;
   }
-  
+
   .hero-title {
     font-size: 2.8rem;
   }
@@ -591,27 +591,27 @@ export default {
   .hero {
     padding: 60px 0;
   }
-  
+
   .hero-title {
     font-size: 2.2rem;
   }
-  
+
   .section {
     padding: 40px 0;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .testimonials-slider {
     flex-direction: column;
   }
-  
+
   .cta-section {
     padding: 60px 0;
   }
-  
+
   .cta-content h2 {
     font-size: 2rem;
   }

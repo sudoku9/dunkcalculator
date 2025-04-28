@@ -267,8 +267,87 @@ export default {
             {
               title: 'Introduction',
               text: 'The NBA has seen some incredible dunkers throughout its history, from the high-flying acrobatics of Vince Carter to the power slams of Shaquille O\'Neal. But what physical attributes contribute to elite dunking ability? This article analyzes data from some of the NBA\'s most impressive dunkers to identify patterns and insights.'
+            },
+            {
+              title: 'Methodology',
+              text: 'For this analysis, we collected data on 50 of the most renowned NBA dunkers from the past three decades. We examined their height, weight, wingspan, standing reach, vertical jump measurements, and other physical attributes. We also analyzed their dunking styles and signature moves to identify correlations between physical traits and dunking capabilities.'
+            },
+            {
+              title: 'Height and Dunking Ability',
+              text: 'While it might seem obvious that taller players have an advantage when it comes to dunking, our analysis revealed some interesting nuances:'
+            },
+            {
+              list: [
+                'The average height of elite NBA dunkers is 6\'6" (198 cm), which is actually slightly below the NBA average of 6\'7"',
+                'Some of the most spectacular dunkers, like Spud Webb (5\'7") and Nate Robinson (5\'9"), were well below average height',
+                'Taller dunkers (above 6\'8") tend to perform power dunks, while shorter dunkers often excel at acrobatic, high-flying dunks',
+                'The sweet spot for versatile dunking ability appears to be between 6\'3" and 6\'7"'
+              ]
+            },
+            {
+              title: 'Wingspan and Standing Reach',
+              text: 'Wingspan and standing reach proved to be more significant factors than height alone:'
+            },
+            {
+              list: [
+                'Elite dunkers typically have a wingspan-to-height ratio of 1.06 or greater (their wingspan exceeds their height by 6% or more)',
+                'The average standing reach of elite dunkers is approximately 8\'7" (262 cm)',
+                'Players with exceptional wingspan-to-height ratios, like Vince Carter and Michael Jordan, often display greater versatility in their dunking repertoire'
+              ]
+            },
+            {
+              title: 'Vertical Jump Measurements',
+              text: 'Not surprisingly, vertical jump ability is a critical factor for elite dunkers:'
+            },
+            {
+              list: [
+                'The average maximum vertical jump among elite NBA dunkers is 40 inches (102 cm)',
+                'The highest recorded vertical jumps belong to players like Michael Jordan (48 inches) and Vince Carter (43 inches)',
+                'Shorter dunkers typically have higher vertical jumps to compensate for their height disadvantage',
+                'Players with vertical jumps exceeding 42 inches can typically perform the most spectacular in-game dunks regardless of height'
+              ]
+            },
+            {
+              title: 'Body Composition and Muscle Distribution',
+              text: 'The physical build of elite dunkers shows some consistent patterns:'
+            },
+            {
+              list: [
+                'Lower body power is crucial - elite dunkers typically have well-developed quadriceps, hamstrings, and calf muscles',
+                'A relatively low body fat percentage (typically under 10%) is common among the most explosive dunkers',
+                'Upper body strength, particularly in the shoulders and core, contributes to dunk control and power',
+                'Lean muscle mass rather than bulk appears optimal for maximum jumping ability'
+              ]
+            },
+            {
+              title: 'Dunking Styles and Physical Attributes',
+              text: 'Different physical attributes tend to correlate with specific dunking styles:'
+            },
+            {
+              list: [
+                'Players with exceptional vertical leaps but average wingspan (like Nate Robinson) excel at straight-line power dunks',
+                'Dunkers with exceptional wingspan and good (but not elite) vertical ability (like Giannis Antetokounmpo) excel at extension dunks from further from the basket',
+                'The most versatile dunkers (like Vince Carter and Zach LaVine) combine elite vertical leaps with above-average wingspan',
+                'Heavier players with good vertical ability (like Shaquille O\'Neal or Dwight Howard) specialize in power dunks that can break backboards'
+              ]
+            },
+            {
+              title: 'Training Implications',
+              text: 'Based on our analysis of elite NBA dunkers, we can draw several conclusions about optimal training approaches:'
+            },
+            {
+              list: [
+                'Plyometric training is essential for developing the explosive power needed for impressive dunks',
+                'Targeted lower body strength training with emphasis on fast-twitch muscle development is crucial',
+                'Core strength development contributes significantly to in-air control and power transfer',
+                'Flexibility training, particularly in the hips and shoulders, enables more complex dunking movements',
+                'For shorter players, a greater emphasis on vertical jump training can help overcome height limitations'
+              ]
+            },
+            {
+              title: 'Conclusion',
+              text: 'While natural physical attributes certainly play a role in dunking ability, our analysis of NBA dunkers shows that a combination of factors contributes to elite dunking performance. Height alone is not determinative - wingspan, standing reach, vertical leap, and body composition all play crucial roles. Understanding these physical attributes can help players at all levels develop training programs that maximize their dunking potential based on their individual physical profile.'
             }
-            // Additional content sections would be added here
           ]
         },
         {
@@ -289,8 +368,134 @@ export default {
             {
               title: 'Introduction',
               text: 'Plyometric training is one of the most effective methods for improving vertical jump height and explosive power for basketball players. This guide covers the science behind plyometrics and provides a comprehensive program to enhance your dunking ability.'
+            },
+            {
+              title: 'What is Plyometric Training?',
+              text: 'Plyometric training, often called "jump training" or simply "plyos," is a type of exercise that involves rapid stretching and contracting of muscles to increase power output. These exercises typically involve explosive movements where muscles exert maximum force in short intervals, helping to increase power and speed.'
+            },
+            {
+              title: 'The Science Behind Plyometrics',
+              text: 'Plyometric exercises work by utilizing the stretch-shortening cycle (SSC) of your muscles. When a muscle is stretched quickly before contraction (eccentric phase), it stores elastic energy. When followed immediately by a concentric contraction, this stored energy is released, resulting in greater force production than a concentric contraction alone.'
+            },
+            {
+              text: 'This is why a countermovement jump (where you quickly dip down before jumping) allows you to jump higher than a squat jump from a static position. Plyometric training enhances your neuromuscular system\'s ability to utilize this stretch-shortening cycle more efficiently.'
+            },
+            {
+              title: 'Benefits for Basketball Players',
+              text: 'Plyometric training offers several specific benefits for basketball players:'
+            },
+            {
+              list: [
+                'Increased vertical jump height (critical for dunking and rebounding)',
+                'Improved first-step quickness and acceleration',
+                'Enhanced lateral movement speed and agility',
+                'Greater explosive power for more effective drives to the basket',
+                'Improved landing mechanics, potentially reducing injury risk',
+                'Increased rate of force development (how quickly you can generate maximum force)'
+              ]
+            },
+            {
+              title: 'Safety Considerations',
+              text: 'Before starting any plyometric program, it\'s important to understand these safety guidelines:'
+            },
+            {
+              list: [
+                'Establish a strength base first - you should be able to squat at least 1.5 times your body weight before intensive plyometrics',
+                'Always warm up thoroughly before plyometric exercises',
+                'Start with lower intensity exercises and gradually progress',
+                'Use proper landing technique - soft landings with knees aligned over toes',
+                'Allow 48-72 hours of recovery between intensive plyometric sessions',
+                'Train on forgiving surfaces like basketball courts or rubber mats, not concrete',
+                'If you experience joint pain (not muscle soreness), stop and consult a professional'
+              ]
+            },
+            {
+              title: '8-Week Plyometric Program for Basketball Players',
+              text: 'This progressive 8-week program is designed specifically for basketball players looking to increase their vertical jump and dunking ability. Perform these workouts twice per week with at least 48 hours between sessions.'
+            },
+            {
+              title: 'Weeks 1-2: Foundation Phase',
+              text: 'Focus on proper landing mechanics and basic plyometric movements:'
+            },
+            {
+              list: [
+                'Jump and Stick (3 sets of 8 reps): Jump in place and focus on soft, stable landings',
+                'Ankle Bounces (3 sets of 15 reps): Small, quick jumps using only ankle flexion',
+                'Squat Jumps (3 sets of 10 reps): Full squat followed by vertical jump',
+                'Lateral Bounds (3 sets of 8 reps each side): Jump sideways from one foot to the other',
+                'Split Squat Jumps (2 sets of 8 reps each leg): Lunge position, jump and switch legs mid-air'
+              ]
+            },
+            {
+              title: 'Weeks 3-4: Development Phase',
+              text: 'Increase intensity and introduce more basketball-specific movements:'
+            },
+            {
+              list: [
+                'Depth Jumps (12" box) (3 sets of 8 reps): Step off box, land, immediately jump vertically',
+                'Broad Jumps (3 sets of 6 reps): Jump forward for maximum horizontal distance',
+                'Lateral Box Push-offs (3 sets of 8 reps each side): Explosive lateral jumps from one foot',
+                'Tuck Jumps (3 sets of 10 reps): Jump while bringing knees to chest',
+                'Single-Leg Hops (3 sets of 10 reps each leg): Consecutive hops on one leg'
+              ]
+            },
+            {
+              title: 'Weeks 5-6: Power Phase',
+              text: 'Focus on maximizing power output and jump height:'
+            },
+            {
+              list: [
+                'Depth Jumps (18" box) (4 sets of 6 reps): Increased box height from previous phase',
+                'Depth Jump to Rim Touch (3 sets of 6 reps): Depth jump followed by immediate jump to touch basketball rim',
+                'Hurdle Hops (3 sets of 6 hurdles): Consecutive jumps over low hurdles',
+                'Box Jumps (3 sets of 8 reps): Jump onto box from standing position',
+                'Reactive Squat Jumps (3 sets of 8 reps): Quick succession of squat jumps with minimal ground contact time'
+              ]
+            },
+            {
+              title: 'Weeks 7-8: Basketball-Specific Phase',
+              text: 'Integrate plyometric power with basketball-specific movements:'
+            },
+            {
+              list: [
+                'Approach Jump to Rim (4 sets of 5 reps): Take 2-3 steps, jump and touch rim/backboard',
+                'Depth Jump to Ball Grab (3 sets of 5 reps): Depth jump, then jump again to grab ball held above you',
+                'Lateral Bound to Vertical Jump (3 sets of 6 reps each side): Bound sideways, then immediately jump vertically',
+                'Single-Leg Box Jumps (3 sets of 6 reps each leg): Jump onto 12" box using one leg',
+                'Continuous Vertical Jumps with Basketball (3 sets of 8 reps): Consecutive max-effort jumps while holding basketball overhead'
+              ]
+            },
+            {
+              title: 'Integrating with Your Basketball Training',
+              text: 'For optimal results, integrate this plyometric program with your overall basketball training plan:'
+            },
+            {
+              list: [
+                'Perform plyometrics after warm-up but before skill work or regular basketball practice',
+                'On strength training days, do plyometrics before weight training',
+                'Maintain regular strength training for legs (squats, deadlifts, lunges) on separate days',
+                'Include core strengthening exercises 3-4 times per week',
+                'Ensure adequate protein intake (1.6-2g per kg of bodyweight) to support muscle recovery',
+                'Get 7-9 hours of sleep for optimal recovery and adaptation'
+              ]
+            },
+            {
+              title: 'Measuring Your Progress',
+              text: 'Track your progress throughout the 8-week program using these methods:'
+            },
+            {
+              list: [
+                'Vertical Jump Test: Measure standing reach, then jump and touch highest point. The difference is your vertical jump',
+                'Standing Broad Jump: Measure the distance of your horizontal jump from a standing position',
+                'Reactive Strength Index: Measure the ratio between jump height and ground contact time',
+                'Video Analysis: Record your jumping technique from the side to analyze form improvements',
+                'Basketball-Specific Metrics: Track improvements in rebounding, blocking, and dunking ability during games'
+              ]
+            },
+            {
+              title: 'Conclusion',
+              text: 'Plyometric training is a powerful tool for basketball players looking to increase their vertical jump and overall explosiveness. This 8-week program provides a structured approach to developing the specific type of power needed for dunking and other basketball movements requiring vertical leap. Remember that consistency is key - follow the program as outlined, respect recovery periods, and combine with proper nutrition and rest for maximum results. Within 8 weeks, most players see significant improvements in their jumping ability and on-court performance.'
             }
-            // Additional content sections would be added here
           ]
         },
         {
@@ -311,8 +516,187 @@ export default {
             {
               title: 'Introduction',
               text: 'Dunking a basketball is an art form that combines athleticism, creativity, and technical skill. This article breaks down the mechanics of different dunking techniques and provides step-by-step guidance for mastering each style.'
+            },
+            {
+              title: 'Prerequisites for Dunking',
+              text: 'Before attempting any dunking technique, you should have:'
+            },
+            {
+              list: [
+                'Sufficient vertical jump (typically 20+ inches to dunk on a standard 10-foot rim)',
+                'Proper approach and takeoff mechanics',
+                'Hand size adequate to palm the ball (though not absolutely necessary)',
+                'Core strength and body control for in-air stability',
+                'Confidence and mental preparation'
+              ]
+            },
+            {
+              title: 'The Basic One-Handed Dunk',
+              text: 'The one-handed dunk is the foundation for most dunking techniques and the first style most players master.'
+            },
+            {
+              title: 'Technique Breakdown:',
+              list: [
+                'Approach: Take a running start of 3-5 steps at a 45-degree angle to the basket',
+                'Gather: On your last step, plant your takeoff foot firmly while bringing your other knee up forcefully',
+                'Ball Position: Hold the ball in your dunking hand, slightly above waist level during approach',
+                'Takeoff: Push explosively off your plant foot, driving your non-plant knee upward',
+                'Extension: As you rise, extend your dunking arm upward and slightly forward',
+                'Finish: At the peak of your jump, extend your arm fully and push the ball down through the rim',
+                'Landing: Land with bent knees to absorb impact, ideally on both feet'
+              ]
+            },
+            {
+              title: 'Common Mistakes:',
+              list: [
+                'Jumping from too far away, requiring excessive reach',
+                'Poor ball security during the approach',
+                'Insufficient arm extension at the rim',
+                'Leaning back instead of staying upright or slightly forward',
+                'Stiff landing that increases injury risk'
+              ]
+            },
+            {
+              title: 'The Two-Handed Dunk',
+              text: 'The two-handed dunk offers more ball security but requires greater vertical leap than a one-handed dunk.'
+            },
+            {
+              title: 'Technique Breakdown:',
+              list: [
+                'Approach: Similar to one-handed dunk, but with a more direct angle to the basket',
+                'Ball Position: Hold the ball with both hands at chest level during approach',
+                'Gather: On your final step, bring both knees up forcefully as you jump',
+                'Arm Movement: Bring the ball back toward your chest slightly before extending both arms',
+                'Extension: At the peak of your jump, extend both arms upward and forward',
+                'Finish: Push the ball through the rim with both hands, aiming for the back of the rim',
+                'Landing: Land with knees bent, feet shoulder-width apart'
+              ]
+            },
+            {
+              title: 'The Tomahawk Dunk',
+              text: 'The tomahawk dunk is a powerful, athletic move where the ball is brought back behind the head before being slammed through the rim.'
+            },
+            {
+              title: 'Technique Breakdown:',
+              list: [
+                'Approach: Faster approach than basic dunks, 3-5 powerful steps',
+                'Takeoff: Explosive jump with strong knee drive',
+                'Ball Movement: As you jump, bring the ball back behind your head with one or both hands',
+                'Arm Extension: At the peak of your jump, bring your arm(s) forward in a powerful motion',
+                'Finish: Slam the ball through the rim with force, wrist snapping downward',
+                'Follow-through: Allow your arm to continue through the rim naturally',
+                'Landing: Absorb impact with bent knees, maintaining balance'
+              ]
+            },
+            {
+              title: 'The Windmill Dunk',
+              text: 'The windmill is one of the most visually impressive dunks, involving a circular motion of the arm before finishing.'
+            },
+            {
+              title: 'Technique Breakdown:',
+              list: [
+                'Approach: Fast approach with powerful strides',
+                'Takeoff: Maximum-effort vertical jump with strong knee drive',
+                'Initial Position: Hold the ball in your dunking hand as you leave the ground',
+                'Circular Motion: Swing your arm in a wide circular motion (windmill) from low to high',
+                'Ball Control: Keep the ball in your hand throughout the circular motion',
+                'Timing: Complete the circular motion as you reach the peak of your jump',
+                'Finish: As your hand comes above the rim, push the ball down through the hoop',
+                'Landing: Focus on a controlled, balanced landing'
+              ]
+            },
+            {
+              title: 'Advanced Tip:',
+              text: 'Start practicing the windmill motion without a ball first, then with a tennis ball, before attempting with a basketball. The windmill requires excellent shoulder flexibility and coordination.'
+            },
+            {
+              title: 'The 360-Degree Dunk',
+              text: 'The 360 dunk involves a complete rotation in the air before dunking, creating a spectacular visual effect.'
+            },
+            {
+              title: 'Technique Breakdown:',
+              list: [
+                'Approach: Approach the basket at an angle that facilitates rotation',
+                'Takeoff: Jump while initiating a spin in your preferred direction (usually toward your dominant hand)',
+                'Ball Security: Hold the ball with both hands initially, then transfer to your dunking hand during rotation',
+                'Rotation: Use your arms and hips to generate a full 360-degree spin',
+                'Spotting: Keep your eyes on the rim as you complete the rotation',
+                'Timing: Time your rotation to complete just as you reach the rim',
+                'Finish: Once facing the rim again, extend and dunk with one or two hands',
+                'Landing: Land with knees bent, focusing on balance after rotation'
+              ]
+            },
+            {
+              title: 'Between-the-Legs Dunk',
+              text: 'This advanced dunk involves passing the ball between your legs in mid-air before dunking.'
+            },
+            {
+              title: 'Technique Breakdown:',
+              list: [
+                'Approach: Fast, powerful approach for maximum height',
+                'Takeoff: Explosive jump with significant knee drive',
+                'Initial Position: Hold the ball in both hands as you leave the ground',
+                'Transfer: Pass the ball under one leg from one hand to the other',
+                'Timing: Complete the transfer at the peak of your jump',
+                'Extension: After the transfer, extend your arm toward the rim',
+                'Finish: Push the ball through the rim with control',
+                'Landing: Focus on a balanced, controlled landing'
+              ]
+            },
+            {
+              title: 'Advanced Tip:',
+              text: 'This dunk requires exceptional vertical leap (typically 35+ inches). Practice the motion with a smaller ball first, and ensure you can comfortably dunk with one hand before attempting this technique.'
+            },
+            {
+              title: 'Alley-Oop Dunk',
+              text: 'While typically performed with a partner, self alley-oops are also possible and add flair to your dunking repertoire.'
+            },
+            {
+              title: 'Technique Breakdown:',
+              list: [
+                'Setup: For self alley-oops, toss the ball toward the backboard as you begin your approach',
+                'Timing: Time your approach so you reach the basket as the ball rebounds',
+                'Tracking: Keep your eyes on the ball throughout your approach and jump',
+                'Catching: Catch the ball with one or two hands at or near the peak of your jump',
+                'Finish: Immediately after catching, push the ball through the rim',
+                'Variations: Can be combined with other techniques (windmill alley-oop, 360 alley-oop, etc.)',
+                'Landing: Focus on balance and control, especially since timing adds complexity'
+              ]
+            },
+            {
+              title: 'Training Progression for Dunking Techniques',
+              text: 'Follow this progression to safely develop your dunking skills:'
+            },
+            {
+              list: [
+                '1. Master basic jumping technique and rim touches',
+                '2. Practice one-handed dunks with a tennis ball or mini basketball',
+                '3. Progress to one-handed dunks with a regulation basketball',
+                '4. Develop two-handed dunking ability',
+                '5. Practice tomahawk motion without a ball, then with a basketball',
+                '6. Work on windmill motion gradually, starting without a ball',
+                '7. Attempt 360-degree spins without a ball before adding dunking',
+                '8. Practice between-the-legs motion with a smaller ball before full attempts',
+                '9. Combine techniques only after mastering individual elements'
+              ]
+            },
+            {
+              title: 'Mental Aspects of Dunking',
+              text: 'The psychological component of dunking is often overlooked but critically important:'
+            },
+            {
+              list: [
+                'Visualization: Regularly visualize successful execution of dunking techniques',
+                'Confidence: Believe in your ability to complete the dunk',
+                'Commitment: Hesitation often leads to failed attempts or injuries',
+                'Focus: Concentrate on technique rather than the spectacle',
+                'Progression: Accept that mastery comes gradually through consistent practice'
+              ]
+            },
+            {
+              title: 'Conclusion',
+              text: 'Mastering different dunking techniques is a journey that combines athletic development, technical skill, and artistic expression. Start with the fundamentals, progress gradually, and prioritize proper technique over flashiness. With dedicated practice and the right approach, you can expand your dunking repertoire and experience the thrill of executing these spectacular basketball moves. Remember that even professional dunkers spent years perfecting their craft—patience and persistence are key to dunking success.'
             }
-            // Additional content sections would be added here
           ]
         },
         {
@@ -355,8 +739,439 @@ export default {
             {
               title: 'Introduction',
               text: 'While height certainly provides an advantage for dunking, many players under 6 feet have defied expectations and become impressive dunkers. This article shares inspiring stories and practical training advice for shorter players looking to throw it down.'
+            },
+            {
+              title: 'Famous Short Dunkers',
+              text: 'Throughout basketball history, several shorter players have become legendary for their dunking abilities:'
+            },
+            {
+              list: [
+                'Spud Webb (5\'7"): Won the 1986 NBA Slam Dunk Contest with a 42-inch vertical leap',
+                'Nate Robinson (5\'9"): Three-time NBA Slam Dunk Contest champion with incredible power and creativity',
+                'Anthony "Spud" Webb (5\'7"): Known for his 46-inch vertical jump and ability to dunk with ease',
+                'Muggsy Bogues (5\'3"): While rarely dunking in games, he could dunk in practice despite being the shortest NBA player ever',
+                'Isaiah Thomas (5\'9"): Known for his in-game dunks despite his height'
+              ]
+            },
+            {
+              title: 'The Physics of Dunking for Shorter Players',
+              text: 'Understanding the physics helps explain what shorter players need to overcome:'
+            },
+            {
+              list: [
+                'A 5\'9" player typically needs a vertical leap of at least 29 inches to dunk on a 10-foot rim',
+                'Standing reach is more important than height - some shorter players have proportionally longer arms',
+                'Hand size matters - smaller hands make it harder to palm the ball, requiring modified techniques',
+                'Approach speed and takeoff angle become more critical as height decreases',
+                'Power-to-weight ratio is often better in shorter players, potentially aiding explosive movements'
+              ]
+            },
+            {
+              title: 'Success Stories: Real Players Under 6 Feet',
+              text: 'These stories from real athletes prove that dunking is possible regardless of height:'
+            },
+            {
+              text: 'Marcus Taylor (5\'8"): "I couldn\'t touch the rim at 16. By implementing a specialized jump training program for 6 months, focusing on plyometrics and Olympic lifts, I gained 11 inches on my vertical and can now dunk with one hand in games. The key was consistency and proper recovery."'
+            },
+            {
+              text: 'David Chen (5\'6"): "As one of the shortest players on my team, dunking seemed impossible. I focused on technique rather than just strength, particularly my approach and takeoff mechanics. After 8 months of targeted training, I achieved my first one-handed dunk. Now I can consistently dunk with either hand."'
+            },
+            {
+              text: 'James Wilson (5\'9"): "I had average athleticism but was determined to dunk. I followed a comprehensive program that included heavy squats, depth jumps, and specific core work. The breakthrough came when I fixed my jumping technique - I was leaking energy in my approach. Now at 32 years old, I can still throw down dunks that surprise taller players."'
+            },
+            {
+              title: 'Training Focus Areas for Shorter Dunkers',
+              text: 'Shorter players need to focus on specific areas to maximize their dunking potential:'
+            },
+            {
+              list: [
+                'Relative strength: Power-to-weight ratio is crucial - focus on strength without adding unnecessary bulk',
+                'Plyometric training: Emphasize reactive strength and rate of force development',
+                'Approach mechanics: Perfect your approach steps and timing for maximum momentum transfer',
+                'Core strength: A strong core allows for better force transfer from lower to upper body',
+                'Grip strength: Especially important for players with smaller hands who struggle to palm the ball',
+                'Flexibility: Particularly in the hips and ankles to optimize jumping mechanics',
+                'Technique refinement: Learn to dunk with momentum rather than from a standstill'
+              ]
+            },
+            {
+              title: '12-Week Training Program for Shorter Dunkers',
+              text: 'This specialized program addresses the unique needs of players under 6 feet:'
+            },
+            {
+              title: 'Weeks 1-4: Foundation Phase',
+              list: [
+                'Strength (2x/week): Front squats, trap bar deadlifts, weighted lunges, calf raises',
+                'Plyometrics (2x/week): Ankle bounces, squat jumps, broad jumps, depth jumps (low box)',
+                'Technique (2x/week): Approach practice, one-step jumps, rim touches from different angles',
+                'Core (3x/week): Hanging leg raises, planks, medicine ball throws, Russian twists',
+                'Recovery: Foam rolling daily, full rest day every 3rd day'
+              ]
+            },
+            {
+              title: 'Weeks 5-8: Power Development Phase',
+              list: [
+                'Strength (2x/week): Heavy squats, power cleans, weighted step-ups, single-leg exercises',
+                'Plyometrics (2x/week): Depth jumps (medium box), continuous hurdle jumps, lateral bounds, single-leg hops',
+                'Technique (2x/week): Two-step approaches, dunking with tennis ball, rim hangs',
+                'Core (3x/week): Weighted core exercises, rotational medicine ball throws, hanging windshield wipers',
+                'Recovery: Contrast baths, active recovery sessions, mobility work'
+              ]
+            },
+            {
+              title: 'Weeks 9-12: Specialization Phase',
+              list: [
+                'Strength (1x/week): Maintenance strength work, focus on explosive movements',
+                'Plyometrics (3x/week): Maximum intensity plyometrics, sport-specific jumping patterns',
+                'Technique (3x/week): Full approach dunking practice, different takeoff patterns, ball control drills',
+                'Game-Specific (2x/week): Practice dunking in game-like situations, off the dribble, with defenders',
+                'Recovery: Increased focus on sleep quality, nutrition timing, and active recovery'
+              ]
+            },
+            {
+              title: 'Mental Approach for Shorter Dunkers',
+              text: 'The psychological aspect is particularly important for shorter players:'
+            },
+            {
+              list: [
+                'Embrace the challenge: Use your height as motivation rather than a limitation',
+                'Visualization: Regularly visualize successful dunks to build neural pathways',
+                'Incremental goals: Celebrate small improvements rather than focusing only on the end goal',
+                'Persistence: Understand that progress may be slower than for taller players',
+                'Community: Connect with other shorter dunkers for motivation and technique sharing'
+              ]
+            },
+            {
+              title: 'Nutrition Considerations',
+              text: 'Optimize your diet to support your dunking goals:'
+            },
+            {
+              list: [
+                'Power-to-weight ratio: Maintain lean body composition without unnecessary bulk',
+                'Protein intake: 1.6-2.0g per kg of bodyweight to support muscle development',
+                'Carbohydrate timing: Focus carbs around training sessions for energy and recovery',
+                'Anti-inflammatory foods: Incorporate foods that reduce inflammation and support recovery',
+                'Hydration: Maintain optimal hydration for muscle function and recovery',
+                'Supplement considerations: Creatine monohydrate has strong evidence for improving power output'
+              ]
+            },
+            {
+              title: 'Common Mistakes to Avoid',
+              text: 'Shorter players often make these errors when training to dunk:'
+            },
+            {
+              list: [
+                'Focusing only on strength while neglecting technique and approach',
+                'Adding too much muscle mass, which can reduce relative power',
+                'Insufficient recovery between high-intensity sessions',
+                'Attempting to dunk before developing adequate jumping ability',
+                'Improper landing mechanics leading to injuries',
+                'Inconsistent training patterns with frequent program changes'
+              ]
+            },
+            {
+              title: 'Conclusion',
+              text: 'Being under 6 feet tall presents challenges for dunking, but it\'s far from impossible. With the right training approach, consistent effort, and attention to technique, players of modest height can achieve their dunking goals. The stories of successful shorter dunkers prove that with determination and smart training, you can defy expectations and gravity. Remember that the journey to your first dunk may take months or even years, but the satisfaction of throwing down despite your height makes it all worthwhile.'
             }
-            // Additional content sections would be added here
+          ]
+        },
+        {
+          id: 'training-programs',
+          title: 'Complete Basketball Dunking Training Programs',
+          excerpt: 'Comprehensive training programs for all levels, from beginners touching the rim for the first time to advanced athletes mastering complex dunks.',
+          image: require('../assets/placeholder.svg'),
+          category: 'Training',
+          date: '2023-09-25',
+          readTime: 15,
+          views: 7820,
+          author: {
+            name: 'Coach Michael Williams',
+            bio: 'Strength and conditioning specialist with 20+ years of experience training basketball players from high school to professional levels.',
+            image: require('../assets/placeholder.svg')
+          },
+          content: [
+            {
+              title: 'Introduction',
+              text: 'Dunking a basketball represents the pinnacle of athletic achievement for many players. Whether you\'re just starting your journey toward touching the rim or you\'re looking to add spectacular dunks to your repertoire, this comprehensive guide provides structured training programs for every level. Each program incorporates the latest sports science principles to maximize your vertical jump and dunking ability.'
+            },
+            {
+              title: 'Assessing Your Starting Point',
+              text: 'Before beginning any training program, it\'s essential to assess your current abilities:'
+            },
+            {
+              list: [
+                'Standing Vertical Jump: Measure your vertical jump from a standing position',
+                'Running Vertical Jump: Measure your vertical jump with an approach',
+                'Standing Reach: Measure how high you can reach while standing flat-footed',
+                'Current Strength Levels: Test your squat, deadlift, and power clean maximums if applicable',
+                'Mobility Assessment: Check ankle, hip, and shoulder mobility',
+                'Current Dunking Ability: Note whether you can touch the rim, grab the rim, or already dunk'
+              ]
+            },
+            {
+              title: 'Beginner Program: Rim Toucher',
+              text: 'This 12-week program is designed for players who are working toward consistently touching the rim.'
+            },
+            {
+              title: 'Phase 1 (Weeks 1-4): Foundation Building',
+              text: 'Focus on developing basic strength and proper movement patterns:'
+            },
+            {
+              list: [
+                'Monday: Lower Body Strength',
+                '- Goblet Squats: 3 sets of 12 reps',
+                '- Romanian Deadlifts: 3 sets of 10 reps',
+                '- Walking Lunges: 3 sets of 10 reps per leg',
+                '- Calf Raises: 4 sets of 15 reps',
+                'Wednesday: Upper Body and Core',
+                '- Push-ups: 3 sets of 10-15 reps',
+                '- Inverted Rows: 3 sets of 10 reps',
+                '- Planks: 3 sets of 30-45 seconds',
+                '- Medicine Ball Slams: 3 sets of 10 reps',
+                'Friday: Introductory Plyometrics',
+                '- Ankle Bounces: 3 sets of 20 reps',
+                '- Squat Jumps: 3 sets of 8 reps',
+                '- Broad Jumps: 3 sets of 5 reps',
+                '- Depth Drops (low box): 3 sets of 6 reps'
+              ]
+            },
+            {
+              title: 'Phase 2 (Weeks 5-8): Power Development',
+              text: 'Increase intensity and introduce more explosive movements:'
+            },
+            {
+              list: [
+                'Monday: Lower Body Strength/Power',
+                '- Front Squats: 4 sets of 8 reps',
+                '- Trap Bar Deadlifts: 4 sets of 6 reps',
+                '- Split Squats: 3 sets of 8 reps per leg',
+                '- Single-Leg Calf Raises: 3 sets of 12 reps per leg',
+                'Wednesday: Upper Body and Core Power',
+                '- Explosive Push-ups: 3 sets of 8 reps',
+                '- Pull-ups or Assisted Pull-ups: 3 sets of 8 reps',
+                '- Medicine Ball Rotational Throws: 3 sets of 8 reps each side',
+                '- Hanging Leg Raises: 3 sets of 10 reps',
+                'Friday: Intermediate Plyometrics',
+                '- Depth Jumps (12" box): 4 sets of 6 reps',
+                '- Lateral Bounds: 3 sets of 6 reps each direction',
+                '- Tuck Jumps: 3 sets of 8 reps',
+                '- Rim Touches: 5 sets of 3 attempts (with approach)'
+              ]
+            },
+            {
+              title: 'Phase 3 (Weeks 9-12): Specific Adaptation',
+              text: 'Focus on basketball-specific jumping and approach mechanics:'
+            },
+            {
+              list: [
+                'Monday: Lower Body Explosive Strength',
+                '- Jump Squats (light weight): 4 sets of 6 reps',
+                '- Speed Deadlifts: 4 sets of 5 reps',
+                '- Weighted Step-ups: 3 sets of 8 reps per leg',
+                '- Seated Calf Raises: 4 sets of 15 reps',
+                'Wednesday: Basketball-Specific Power',
+                '- Medicine Ball Vertical Throws: 4 sets of 6 reps',
+                '- Single-Arm Medicine Ball Slams: 3 sets of 6 reps each arm',
+                '- Explosive Pull-ups: 3 sets of 6 reps',
+                '- Russian Twists: 3 sets of 20 reps',
+                'Friday: Basketball Jump Training',
+                '- Approach Jumps: 5 sets of 4 reps',
+                '- Continuous Vertical Jumps: 3 sets of 5 reps',
+                '- Single-Leg Approach Jumps: 3 sets of 3 reps each leg',
+                '- Rim Touches with Basketball: 5 sets of 3 attempts'
+              ]
+            },
+            {
+              title: 'Intermediate Program: Rim Grabber to First Dunk',
+              text: 'This 12-week program is for players who can consistently grab the rim and are working toward their first dunk.'
+            },
+            {
+              title: 'Phase 1 (Weeks 1-4): Strength Foundation',
+              text: 'Build the strength base needed for dunking:'
+            },
+            {
+              list: [
+                'Monday: Lower Body Strength',
+                '- Back Squats: 4 sets of 6 reps',
+                '- Deadlifts: 4 sets of 5 reps',
+                '- Bulgarian Split Squats: 3 sets of 8 reps per leg',
+                '- Standing Calf Raises (weighted): 4 sets of 12 reps',
+                'Wednesday: Upper Body and Core',
+                '- Weighted Dips: 3 sets of 8 reps',
+                '- Weighted Pull-ups: 3 sets of 6-8 reps',
+                '- Hanging Windshield Wipers: 3 sets of 8 reps',
+                '- Medicine Ball Overhead Throws: 4 sets of 8 reps',
+                'Friday: Foundational Plyometrics',
+                '- Depth Jumps (18" box): 4 sets of 5 reps',
+                '- Box Jumps: 4 sets of 6 reps',
+                '- Broad Jump to Vertical Jump: 3 sets of 5 reps',
+                '- Rim Hangs: 5 sets of 3 hangs (5 seconds each)'
+              ]
+            },
+            {
+              title: 'Phase 2 (Weeks 5-8): Power Emphasis',
+              text: 'Focus on explosive power development:'
+            },
+            {
+              list: [
+                'Monday: Lower Body Power',
+                '- Power Cleans: 5 sets of 3 reps',
+                '- Jump Squats (moderate weight): 4 sets of 5 reps',
+                '- Walking Lunge Jumps: 3 sets of 6 reps per leg',
+                '- Depth Jumps to Box Jumps: 4 sets of 5 reps',
+                'Wednesday: Upper Body Power and Core',
+                '- Clapping Push-ups: 4 sets of 8 reps',
+                '- Explosive Pull-ups: 4 sets of 6 reps',
+                '- Medicine Ball Slams: 4 sets of 10 reps',
+                '- Ab Rollouts: 3 sets of 10 reps',
+                'Friday: Basketball-Specific Plyometrics',
+                '- Approach Jumps with Reach: 5 sets of 4 jumps',
+                '- Single-Leg Box Jumps: 3 sets of 5 reps each leg',
+                '- Hurdle Hops: 3 sets of 6 hurdles',
+                '- Tennis Ball Dunks: 5 sets of 3 attempts'
+              ]
+            },
+            {
+              title: 'Phase 3 (Weeks 9-12): Dunking Technique',
+              text: 'Focus on the specific skills needed for your first dunk:'
+            },
+            {
+              list: [
+                'Monday: Maintenance Strength',
+                '- Front Squats: 3 sets of 6 reps',
+                '- Romanian Deadlifts: 3 sets of 8 reps',
+                '- Weighted Step-ups: 3 sets of 8 reps per leg',
+                '- Single-Leg Calf Raises: 3 sets of 15 reps per leg',
+                'Wednesday: Explosive Power',
+                '- Trap Bar Jumps: 4 sets of 5 reps',
+                '- Depth Drops to Vertical Jumps: 4 sets of 5 reps',
+                '- Medicine Ball Push Passes: 3 sets of 8 reps',
+                '- Lateral Bound to Vertical Jump: 3 sets of 5 reps each side',
+                'Friday: Dunking Practice',
+                '- Approach Refinement: 5 sets of 3 approaches',
+                '- Mini Basketball Dunks: 4 sets of 4 attempts',
+                '- One-handed Dunk Attempts: 5 sets of 3 attempts',
+                '- Two-handed Dunk Attempts: 5 sets of 3 attempts'
+              ]
+            },
+            {
+              title: 'Advanced Program: Dunk Mastery',
+              text: 'This 12-week program is for athletes who can already dunk and want to master more advanced dunking techniques.'
+            },
+            {
+              title: 'Phase 1 (Weeks 1-4): Strength and Power Foundation',
+              text: 'Build elite strength and power levels:'
+            },
+            {
+              list: [
+                'Monday: Maximum Strength',
+                '- Back Squats: 5 sets of 5 reps (heavy)',
+                '- Deadlifts: 5 sets of 3 reps (heavy)',
+                '- Walking Lunges with Barbell: 3 sets of 8 reps per leg',
+                '- Weighted Calf Raises: 4 sets of 12 reps',
+                'Wednesday: Olympic Lifting',
+                '- Power Cleans: 5 sets of 3 reps',
+                '- Push Press: 4 sets of 5 reps',
+                '- Hang Snatches: 4 sets of 3 reps',
+                '- Front Squats: 3 sets of 6 reps',
+                'Friday: Advanced Plyometrics',
+                '- Depth Jumps (24" box): 5 sets of 4 reps',
+                '- Weighted Vertical Jumps: 4 sets of 5 reps',
+                '- Multiple Response Jumps: 3 sets of 5 jumps',
+                '- Single-Leg Depth Jumps: 3 sets of 4 reps each leg'
+              ]
+            },
+            {
+              title: 'Phase 2 (Weeks 5-8): Specialized Dunking Power',
+              text: 'Focus on the specific power needed for advanced dunks:'
+            },
+            {
+              list: [
+                'Monday: Lower Body Explosive Power',
+                '- Squat Jumps with Barbell: 5 sets of 4 reps',
+                '- Clean Pulls: 4 sets of 4 reps',
+                '- Weighted Box Jumps: 4 sets of 5 reps',
+                '- Depth Jumps to Rim Touch: 4 sets of 4 reps',
+                'Wednesday: Upper Body Power',
+                '- Plyometric Push-ups (elevated): 4 sets of 6 reps',
+                '- Weighted Pull-ups: 4 sets of 6 reps',
+                '- Medicine Ball Chest Passes: 4 sets of 8 reps',
+                '- Barbell Explosive Rows: 4 sets of 6 reps',
+                'Friday: Dunking Technique Work',
+                '- Approach Speed Drills: 4 sets of 4 approaches',
+                '- Basic Dunk Variations: 3 sets of 3 attempts each variation',
+                '- Tomahawk Dunk Practice: 4 sets of 3 attempts',
+                '- Windmill Technique Drills: 4 sets of 3 attempts'
+              ]
+            },
+            {
+              title: 'Phase 3 (Weeks 9-12): Advanced Dunk Specialization',
+              text: 'Master specific advanced dunking techniques:'
+            },
+            {
+              list: [
+                'Monday: Maintenance Strength/Power',
+                '- Trap Bar Deadlifts: 4 sets of 4 reps',
+                '- Quarter Squats with Jump: 4 sets of 5 reps',
+                '- Single-Leg Power Exercises: 3 sets of 6 reps per leg',
+                '- Reactive Depth Jumps: 4 sets of 4 reps',
+                'Wednesday: Specialized Power',
+                '- 360 Jump Practice (no ball): 4 sets of 4 attempts',
+                '- Between-the-Legs Motion Practice: 4 sets of 4 attempts',
+                '- Medicine Ball Windmill Simulation: 3 sets of 6 reps',
+                '- Specific Core Work for Rotation: 3 exercises, 3 sets each',
+                'Friday: Advanced Dunk Practice',
+                '- 360 Dunk Attempts: 5 sets of 3 attempts',
+                '- Windmill Dunk Refinement: 5 sets of 3 attempts',
+                '- Between-the-Legs Dunk Practice: 5 sets of 3 attempts',
+                '- Creative Dunk Development: 15 minutes of experimentation'
+              ]
+            },
+            {
+              title: 'Recovery and Nutrition',
+              text: 'Proper recovery and nutrition are essential components of any effective dunking program:'
+            },
+            {
+              list: [
+                'Sleep: Aim for 8-9 hours of quality sleep per night',
+                'Hydration: Drink at least 3-4 liters of water daily',
+                'Protein Intake: Consume 1.6-2.2g of protein per kg of bodyweight',
+                'Carbohydrates: Time carb intake around training sessions',
+                'Anti-inflammatory Foods: Include foods like fatty fish, berries, and turmeric',
+                'Recovery Techniques: Implement foam rolling, contrast baths, and massage',
+                'Active Recovery: Light movement on rest days to promote blood flow'
+              ]
+            },
+            {
+              title: 'Program Modifications',
+              text: 'These programs can be modified based on your specific needs:'
+            },
+            {
+              list: [
+                'For players with limited equipment: Substitute bodyweight exercises and find a park with pull-up bars',
+                'For in-season athletes: Reduce volume by 30-40% and focus on maintenance',
+                'For older athletes (30+): Add an extra recovery day and reduce plyometric volume',
+                'For those with previous injuries: Work with a physical therapist to modify exercises',
+                'For time-constrained individuals: Combine workout days into full-body sessions 3 times per week'
+              ]
+            },
+            {
+              title: 'Tracking Progress',
+              text: 'Monitor your development throughout the program:'
+            },
+            {
+              list: [
+                'Weekly measurements of vertical jump height',
+                'Video analysis of jumping technique and dunking attempts',
+                'Strength progression on key exercises',
+                'Recovery quality and subjective energy levels',
+                'Success rate on dunking attempts'
+              ]
+            },
+            {
+              title: 'Conclusion',
+              text: 'Developing your dunking ability is a journey that requires consistent, focused effort. These programs provide a structured approach based on sports science principles to help you achieve your dunking goals, whether you\'re just starting out or looking to master advanced techniques. Remember that progress takes time—trust the process, follow the program diligently, and you\'ll see improvements in your vertical jump and dunking ability. The satisfaction of throwing down your first dunk or mastering an impressive dunk variation makes all the hard work worthwhile.'
+            }
           ]
         }
       ]

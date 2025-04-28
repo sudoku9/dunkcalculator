@@ -126,6 +126,15 @@ export default {
           readTime: 12
         },
         {
+          id: 'training-programs',
+          title: 'Complete Basketball Dunking Training Programs',
+          excerpt: 'Comprehensive training programs for all levels, from beginners touching the rim for the first time to advanced athletes mastering complex dunks.',
+          image: require('../assets/placeholder.svg'),
+          category: 'training',
+          date: '2023-09-25',
+          readTime: 15
+        },
+        {
           id: 'dunking-techniques',
           title: 'Mastering Different Dunking Techniques',
           excerpt: 'Learn the mechanics and techniques behind various types of dunks, from basic one-handed dunks to advanced windmills and 360s.',
