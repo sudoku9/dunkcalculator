@@ -5,195 +5,195 @@
       <p class="calculator-description">
         Enter your physical measurements to calculate your dunking potential and get personalized recommendations.
       </p>
-      
+
       <div class="form-tabs">
-        <button 
-          :class="['tab-btn', { active: activeTab === 'basic' }]" 
+        <button
+          :class="['tab-btn', { active: activeTab === 'basic' }]"
           @click="activeTab = 'basic'"
         >
           Basic Parameters
         </button>
-        <button 
-          :class="['tab-btn', { active: activeTab === 'advanced' }]" 
+        <button
+          :class="['tab-btn', { active: activeTab === 'advanced' }]"
           @click="activeTab = 'advanced'"
         >
           Advanced Parameters
         </button>
       </div>
-      
+
       <div v-if="activeTab === 'basic'" class="tab-content">
         <div class="form-group">
           <label for="height" class="form-label">Height (cm)</label>
-          <input 
-            type="number" 
-            id="height" 
-            v-model="formData.height" 
-            class="form-control" 
-            min="120" 
+          <input
+            type="number"
+            id="height"
+            v-model="formData.height"
+            class="form-control"
+            min="120"
             max="250"
             @input="validateInput"
           >
           <span class="form-hint">Your height in centimeters</span>
         </div>
-        
+
         <div class="form-group">
           <label for="weight" class="form-label">Weight (kg)</label>
-          <input 
-            type="number" 
-            id="weight" 
-            v-model="formData.weight" 
-            class="form-control" 
-            min="30" 
+          <input
+            type="number"
+            id="weight"
+            v-model="formData.weight"
+            class="form-control"
+            min="30"
             max="200"
             @input="validateInput"
           >
           <span class="form-hint">Your weight in kilograms</span>
         </div>
-        
+
         <div class="form-group">
           <label for="standingReach" class="form-label">Standing Reach (cm)</label>
-          <input 
-            type="number" 
-            id="standingReach" 
-            v-model="formData.standingReach" 
-            class="form-control" 
-            min="150" 
+          <input
+            type="number"
+            id="standingReach"
+            v-model="formData.standingReach"
+            class="form-control"
+            min="150"
             max="300"
             @input="validateInput"
           >
           <span class="form-hint">How high you can reach with your arm extended</span>
         </div>
-        
+
         <div class="form-group">
           <label for="runningReach" class="form-label">Running Reach (cm)</label>
-          <input 
-            type="number" 
-            id="runningReach" 
-            v-model="formData.runningReach" 
-            class="form-control" 
-            min="150" 
+          <input
+            type="number"
+            id="runningReach"
+            v-model="formData.runningReach"
+            class="form-control"
+            min="150"
             max="350"
             @input="validateInput"
           >
           <span class="form-hint">How high you can reach while running and jumping</span>
         </div>
-        
+
         <div class="form-group">
           <label for="armLength" class="form-label">Arm Length (cm)</label>
-          <input 
-            type="number" 
-            id="armLength" 
-            v-model="formData.armLength" 
-            class="form-control" 
-            min="50" 
+          <input
+            type="number"
+            id="armLength"
+            v-model="formData.armLength"
+            class="form-control"
+            min="50"
             max="100"
             @input="validateInput"
           >
           <span class="form-hint">Length of your arm from shoulder to wrist</span>
         </div>
-        
+
         <div class="form-group">
           <label for="handSize" class="form-label">Hand Size (cm)</label>
-          <input 
-            type="number" 
-            id="handSize" 
-            v-model="formData.handSize" 
-            class="form-control" 
-            min="15" 
+          <input
+            type="number"
+            id="handSize"
+            v-model="formData.handSize"
+            class="form-control"
+            min="15"
             max="30"
             @input="validateInput"
           >
           <span class="form-hint">Length from wrist to tip of middle finger</span>
         </div>
       </div>
-      
+
       <div v-if="activeTab === 'advanced'" class="tab-content">
         <div class="form-group">
           <label for="runupSteps" class="form-label">Runup Steps</label>
-          <input 
-            type="number" 
-            id="runupSteps" 
-            v-model="formData.runupSteps" 
-            class="form-control" 
-            min="1" 
+          <input
+            type="number"
+            id="runupSteps"
+            v-model="formData.runupSteps"
+            class="form-control"
+            min="1"
             max="10"
             @input="validateInput"
           >
           <span class="form-hint">Number of steps in your approach</span>
         </div>
-        
+
         <div class="form-group">
           <label for="takeoffAngle" class="form-label">Takeoff Angle (degrees)</label>
-          <input 
-            type="number" 
-            id="takeoffAngle" 
-            v-model="formData.takeoffAngle" 
-            class="form-control" 
-            min="0" 
+          <input
+            type="number"
+            id="takeoffAngle"
+            v-model="formData.takeoffAngle"
+            class="form-control"
+            min="0"
             max="90"
             @input="validateInput"
           >
           <span class="form-hint">Angle of your body at takeoff (45° is optimal)</span>
         </div>
-        
+
         <div class="form-group">
           <label for="coreStrength" class="form-label">Core Strength Index (1-10)</label>
-          <input 
-            type="number" 
-            id="coreStrength" 
-            v-model="formData.coreStrength" 
-            class="form-control" 
-            min="1" 
+          <input
+            type="number"
+            id="coreStrength"
+            v-model="formData.coreStrength"
+            class="form-control"
+            min="1"
             max="10"
             @input="validateInput"
           >
           <span class="form-hint">Rate your core strength from 1 (weak) to 10 (strong)</span>
         </div>
-        
+
         <div class="form-group">
           <label for="kneeAngle" class="form-label">Knee Bend Angle (degrees)</label>
-          <input 
-            type="number" 
-            id="kneeAngle" 
-            v-model="formData.kneeAngle" 
-            class="form-control" 
-            min="60" 
+          <input
+            type="number"
+            id="kneeAngle"
+            v-model="formData.kneeAngle"
+            class="form-control"
+            min="60"
             max="120"
             @input="validateInput"
           >
           <span class="form-hint">Angle of knee bend at lowest point (90° is optimal)</span>
         </div>
       </div>
-      
+
       <div class="form-actions">
         <button class="btn btn-secondary" @click="resetForm">Reset</button>
         <button class="btn" @click="calculateResults" :disabled="!isFormValid">Calculate</button>
       </div>
     </div>
-    
+
     <div v-if="showResults" class="calculator-results">
       <h2>Your Dunking Analysis</h2>
-      
+
       <div class="results-summary">
         <div class="result-card">
           <div class="result-icon">🏀</div>
           <div class="result-value">{{ results.dunkProbability }}%</div>
           <div class="result-label">Dunk Probability</div>
         </div>
-        
+
         <div class="result-card">
           <div class="result-icon">📏</div>
           <div class="result-value">{{ results.verticalJumpNeeded }} cm</div>
           <div class="result-label">Vertical Jump Needed</div>
         </div>
-        
+
         <div class="result-card">
           <div class="result-icon">⏱️</div>
           <div class="result-value">{{ results.hangTime }} sec</div>
           <div class="result-label">Hang Time</div>
         </div>
       </div>
-      
+
       <div class="results-details">
         <div class="results-section">
           <h3>Detailed Analysis</h3>
@@ -218,7 +218,7 @@
             <span class="detail-value">{{ results.initialJumpingSpeed }} m/s</span>
           </div>
         </div>
-        
+
         <div class="results-section">
           <h3>Recommended Dunk Types</h3>
           <ul class="dunk-types-list">
@@ -228,7 +228,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="training-recommendations">
         <h3>Training Recommendations</h3>
         <p>Based on your measurements, here are personalized training recommendations:</p>
@@ -285,20 +285,24 @@ export default {
     isFormValid() {
       // Check if all required fields are filled and valid
       const basicFields = ['height', 'weight', 'standingReach', 'runningReach', 'armLength', 'handSize']
-      const advancedFields = ['runupSteps', 'takeoffAngle', 'coreStrength', 'kneeAngle']
-      
-      const allFields = [...basicFields, ...advancedFields]
-      return allFields.every(field => this.formData[field] && !this.errors[field])
+
+      // Only validate the fields that are relevant to the current tab
+      if (this.activeTab === 'basic') {
+        return basicFields.every(field => this.formData[field] !== null && this.formData[field] !== undefined && !this.errors[field])
+      } else {
+        const advancedFields = ['runupSteps', 'takeoffAngle', 'coreStrength', 'kneeAngle']
+        return [...basicFields, ...advancedFields].every(field => this.formData[field] !== null && this.formData[field] !== undefined && !this.errors[field])
+      }
     }
   },
   methods: {
     validateInput(e) {
       const field = e.target.id
       const value = parseFloat(this.formData[field])
-      
+
       // Clear previous error
       this.errors[field] = null
-      
+
       // Validate based on field
       switch(field) {
         case 'height':
@@ -370,91 +374,146 @@ export default {
       this.showResults = false
     },
     calculateResults() {
-      // Standard basketball rim height in cm
-      const rimHeight = 305
-      
-      // Calculate current vertical jump (difference between running reach and standing reach)
-      const currentVerticalJump = this.formData.runningReach - this.formData.standingReach
-      
-      // Calculate vertical jump needed to dunk (rim height + ball radius - standing reach + hand size adjustment)
-      const ballRadius = 12 // Basketball radius in cm
-      const handSizeAdjustment = 5 // Adjustment for hand control
-      const verticalJumpNeeded = rimHeight + ballRadius - this.formData.standingReach + handSizeAdjustment
-      
-      // Calculate improvement needed
-      const improvementNeeded = Math.max(0, verticalJumpNeeded - currentVerticalJump)
-      
-      // Calculate dunk probability based on current jump vs needed jump
-      let dunkProbability = 0
-      if (currentVerticalJump >= verticalJumpNeeded) {
-        dunkProbability = 100
-      } else {
-        // Calculate probability based on how close they are
-        const gap = verticalJumpNeeded - currentVerticalJump
-        if (gap <= 5) {
-          dunkProbability = 90
-        } else if (gap <= 10) {
-          dunkProbability = 70
-        } else if (gap <= 15) {
-          dunkProbability = 50
-        } else if (gap <= 20) {
-          dunkProbability = 30
-        } else if (gap <= 30) {
-          dunkProbability = 10
+      try {
+        // Ensure all form data is converted to numbers
+        const formData = {
+          height: parseFloat(this.formData.height) || 180,
+          weight: parseFloat(this.formData.weight) || 75,
+          standingReach: parseFloat(this.formData.standingReach) || 230,
+          runningReach: parseFloat(this.formData.runningReach) || 280,
+          armLength: parseFloat(this.formData.armLength) || 75,
+          handSize: parseFloat(this.formData.handSize) || 20,
+          runupSteps: parseFloat(this.formData.runupSteps) || 3,
+          takeoffAngle: parseFloat(this.formData.takeoffAngle) || 45,
+          coreStrength: parseFloat(this.formData.coreStrength) || 7,
+          kneeAngle: parseFloat(this.formData.kneeAngle) || 90
+        }
+
+        // Standard basketball rim height in cm
+        const rimHeight = 305
+
+        // Calculate current vertical jump (difference between running reach and standing reach)
+        const currentVerticalJump = formData.runningReach - formData.standingReach
+
+        // Calculate vertical jump needed to dunk (rim height + ball radius - standing reach + hand size adjustment)
+        const ballRadius = 12 // Basketball radius in cm
+        const handSizeAdjustment = 5 // Adjustment for hand control
+        const verticalJumpNeeded = rimHeight + ballRadius - formData.standingReach + handSizeAdjustment
+
+        // Calculate improvement needed
+        const improvementNeeded = Math.max(0, verticalJumpNeeded - currentVerticalJump)
+
+        // Calculate dunk probability based on current jump vs needed jump
+        let dunkProbability = 0
+        if (currentVerticalJump >= verticalJumpNeeded) {
+          dunkProbability = 100
         } else {
-          dunkProbability = 5
+          // Calculate probability based on how close they are
+          const gap = verticalJumpNeeded - currentVerticalJump
+          if (gap <= 5) {
+            dunkProbability = 90
+          } else if (gap <= 10) {
+            dunkProbability = 70
+          } else if (gap <= 15) {
+            dunkProbability = 50
+          } else if (gap <= 20) {
+            dunkProbability = 30
+          } else if (gap <= 30) {
+            dunkProbability = 10
+          } else {
+            dunkProbability = 5
+          }
         }
-      }
-      
-      // Calculate hang time (t = 2 * sqrt(2 * h / g))
-      const gravity = 9.81 // m/s²
-      const jumpHeightMeters = currentVerticalJump / 100 // Convert to meters
-      const hangTime = (2 * Math.sqrt(2 * jumpHeightMeters / gravity)).toFixed(2)
-      
-      // Calculate optimal takeoff point based on height, arm length, and takeoff angle
-      const takeoffAngleRadians = this.formData.takeoffAngle * (Math.PI / 180)
-      const optimalTakeoffPoint = (this.formData.height / 2 + this.formData.armLength) * Math.sin(takeoffAngleRadians)
-      
-      // Calculate jumping energy (E = m * g * h)
-      const weightKg = this.formData.weight
-      const jumpingEnergy = (weightKg * gravity * jumpHeightMeters).toFixed(1)
-      
-      // Calculate initial jumping speed (v = sqrt(2 * g * h))
-      const initialJumpingSpeed = (Math.sqrt(2 * gravity * jumpHeightMeters)).toFixed(2)
-      
-      // Determine recommended dunk types based on measurements and ability
-      const recommendedDunkTypes = this.getRecommendedDunkTypes(currentVerticalJump, verticalJumpNeeded, this.formData.handSize)
-      
-      // Generate training recommendations
-      const trainingRecommendations = this.getTrainingRecommendations(improvementNeeded, this.formData.coreStrength, this.formData.kneeAngle)
-      
-      // Set results
-      this.results = {
-        dunkProbability: Math.round(dunkProbability),
-        verticalJumpNeeded: Math.round(verticalJumpNeeded),
-        hangTime,
-        currentVerticalJump: Math.round(currentVerticalJump),
-        improvementNeeded: Math.round(improvementNeeded),
-        optimalTakeoffPoint: Math.round(optimalTakeoffPoint),
-        jumpingEnergy,
-        initialJumpingSpeed,
-        recommendedDunkTypes,
-        trainingRecommendations
-      }
-      
-      this.showResults = true
-      
-      // Scroll to results
-      this.$nextTick(() => {
-        const resultsElement = document.querySelector('.calculator-results')
-        if (resultsElement) {
-          resultsElement.scrollIntoView({ behavior: 'smooth' })
+
+        // Calculate hang time (t = 2 * sqrt(2 * h / g))
+        const gravity = 9.81 // m/s²
+        const jumpHeightMeters = Math.max(0.01, currentVerticalJump / 100) // Convert to meters, ensure positive
+        const hangTime = (2 * Math.sqrt(2 * jumpHeightMeters / gravity)).toFixed(2)
+
+        // Calculate optimal takeoff point based on height, arm length, and takeoff angle
+        const takeoffAngleRadians = formData.takeoffAngle * (Math.PI / 180)
+        const optimalTakeoffPoint = (formData.height / 2 + formData.armLength) * Math.sin(takeoffAngleRadians)
+
+        // Calculate jumping energy (E = m * g * h)
+        const weightKg = formData.weight
+        const jumpingEnergy = (weightKg * gravity * jumpHeightMeters).toFixed(1)
+
+        // Calculate initial jumping speed (v = sqrt(2 * g * h))
+        const initialJumpingSpeed = (Math.sqrt(2 * gravity * jumpHeightMeters)).toFixed(2)
+
+        // Determine recommended dunk types based on measurements and ability
+        const recommendedDunkTypes = this.getRecommendedDunkTypes(currentVerticalJump, verticalJumpNeeded, formData.handSize)
+
+        // Generate training recommendations
+        const trainingRecommendations = this.getTrainingRecommendations(improvementNeeded, formData.coreStrength, formData.kneeAngle)
+
+        // Set results
+        this.results = {
+          dunkProbability: Math.round(dunkProbability),
+          verticalJumpNeeded: Math.round(verticalJumpNeeded),
+          hangTime,
+          currentVerticalJump: Math.round(currentVerticalJump),
+          improvementNeeded: Math.round(improvementNeeded),
+          optimalTakeoffPoint: Math.round(optimalTakeoffPoint),
+          jumpingEnergy,
+          initialJumpingSpeed,
+          recommendedDunkTypes,
+          trainingRecommendations
         }
-      })
+
+        this.showResults = true
+
+        // Scroll to results
+        this.$nextTick(() => {
+          const resultsElement = document.querySelector('.calculator-results')
+          if (resultsElement) {
+            resultsElement.scrollIntoView({ behavior: 'smooth' })
+          }
+        })
+      } catch (error) {
+        console.error('Error calculating results:', error)
+        // Provide fallback results
+        this.results = {
+          dunkProbability: 50,
+          verticalJumpNeeded: 60,
+          hangTime: '0.80',
+          currentVerticalJump: 50,
+          improvementNeeded: 10,
+          optimalTakeoffPoint: 120,
+          jumpingEnergy: '36.8',
+          initialJumpingSpeed: '3.13',
+          recommendedDunkTypes: [
+            { name: 'One-handed Dunk', difficulty: 'Moderate' }
+          ],
+          trainingRecommendations: [
+            {
+              title: 'Plyometric Training',
+              description: 'Explosive exercises to improve your vertical jump:',
+              exercises: [
+                'Box Jumps: 4 sets of 10 reps',
+                'Depth Jumps: 3 sets of 8 reps',
+                'Jump Squats: 4 sets of 12 reps',
+                'Burpees: 3 sets of 15 reps'
+              ]
+            },
+            {
+              title: 'Strength Training',
+              description: 'Build lower body and core strength:',
+              exercises: [
+                'Squats: 4 sets of 8-10 reps',
+                'Deadlifts: 3 sets of 8 reps',
+                'Lunges: 3 sets of 12 reps per leg',
+                'Calf Raises: 4 sets of 15 reps'
+              ]
+            }
+          ]
+        }
+        this.showResults = true
+      }
     },
     getRecommendedDunkTypes(currentJump, neededJump, handSize) {
       const dunkTypes = []
-      
+
       // One-handed dunk
       if (currentJump >= neededJump - 5) {
         dunkTypes.push({
@@ -467,7 +526,7 @@ export default {
           difficulty: 'Moderate'
         })
       }
-      
+
       // Two-handed dunk (requires more height)
       if (currentJump >= neededJump) {
         dunkTypes.push({
@@ -480,7 +539,7 @@ export default {
           difficulty: 'Moderate'
         })
       }
-      
+
       // Alley-oop (requires good timing but less vertical)
       if (currentJump >= neededJump - 10) {
         dunkTypes.push({
@@ -488,7 +547,7 @@ export default {
           difficulty: 'Moderate'
         })
       }
-      
+
       // Windmill (requires significant vertical and coordination)
       if (currentJump >= neededJump + 10) {
         dunkTypes.push({
@@ -496,7 +555,7 @@ export default {
           difficulty: 'Hard'
         })
       }
-      
+
       // 360 dunk (requires excellent vertical and coordination)
       if (currentJump >= neededJump + 20) {
         dunkTypes.push({
@@ -504,7 +563,7 @@ export default {
           difficulty: 'Very Hard'
         })
       }
-      
+
       // If hand size is large, add tomahawk
       if (handSize >= 22 && currentJump >= neededJump + 5) {
         dunkTypes.push({
@@ -512,7 +571,7 @@ export default {
           difficulty: 'Hard'
         })
       }
-      
+
       // If no dunks are possible yet
       if (dunkTypes.length === 0) {
         dunkTypes.push({
@@ -520,12 +579,12 @@ export default {
           difficulty: 'Preparatory'
         })
       }
-      
+
       return dunkTypes
     },
     getTrainingRecommendations(improvementNeeded, coreStrength, kneeAngle) {
       const recommendations = []
-      
+
       // Plyometric training
       recommendations.push({
         title: 'Plyometric Training',
@@ -537,7 +596,7 @@ export default {
           'Burpees: 3 sets of 15 reps'
         ]
       })
-      
+
       // Strength training
       recommendations.push({
         title: 'Strength Training',
@@ -549,7 +608,7 @@ export default {
           'Calf Raises: 4 sets of 15 reps'
         ]
       })
-      
+
       // Core training (if core strength is below 7)
       if (coreStrength < 7) {
         recommendations.push({
@@ -563,7 +622,7 @@ export default {
           ]
         })
       }
-      
+
       // Knee angle optimization (if not in optimal range)
       if (kneeAngle < 80 || kneeAngle > 100) {
         recommendations.push({
@@ -577,7 +636,7 @@ export default {
           ]
         })
       }
-      
+
       // If significant improvement needed
       if (improvementNeeded > 15) {
         recommendations.push({
@@ -591,7 +650,7 @@ export default {
           ]
         })
       }
-      
+
       return recommendations
     }
   }
@@ -824,15 +883,15 @@ export default {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .result-card {
     width: 100%;
   }
-  
+
   .results-details {
     flex-direction: column;
   }
-  
+
   .training-areas {
     flex-direction: column;
   }

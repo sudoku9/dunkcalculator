@@ -122,7 +122,7 @@
             </div>
             <div class="testimonial-author">
               <div class="author-image">
-                <img src="../assets/testimonial1.jpg" alt="Michael T." />
+                <img src="../assets/testimonial1.svg" alt="Michael T." />
               </div>
               <div class="author-info">
                 <h4>Michael T.</h4>
@@ -137,7 +137,7 @@
             </div>
             <div class="testimonial-author">
               <div class="author-image">
-                <img src="../assets/testimonial2.jpg" alt="Sarah K." />
+                <img src="../assets/testimonial2.svg" alt="Sarah K." />
               </div>
               <div class="author-info">
                 <h4>Sarah K.</h4>
