@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Coordinate System -->
+  <path d="M50 250H350" stroke="#000000" stroke-width="2"/>
+  <path d="M100 50V250" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Axis Labels -->
+  <text x="340" y="270" font-family="Arial" font-size="12" fill="#000000">Time</text>
+  <text x="70" y="60" font-family="Arial" font-size="12" fill="#000000">Height</text>
+  
+  <!-- Jump Trajectory Curve -->
+  <path d="M100 250C100 250 150 100 200 100C250 100 300 250 300 250" stroke="#FF5722" stroke-width="3" fill="none"/>
+  
+  <!-- Physics Formulas -->
+  <text x="150" y="30" font-family="Arial" font-size="12" fill="#000000">h = v₀²/(2g)</text>
+  <text x="250" y="30" font-family="Arial" font-size="12" fill="#000000">t = 2v₀/g</text>
+  
+  <!-- Data Points -->
+  <circle cx="150" cy="175" r="5" fill="#2196F3"/>
+  <circle cx="200" cy="100" r="5" fill="#2196F3"/>
+  <circle cx="250" cy="175" r="5" fill="#2196F3"/>
+  
+  <!-- Measurement Lines -->
+  <path d="M100 100H200" stroke="#000000" stroke-width="1" stroke-dasharray="5 5"/>
+  <path d="M200 100V250" stroke="#000000" stroke-width="1" stroke-dasharray="5 5"/>
+  
+  <!-- Basketball Player Silhouette -->
+  <path d="M200 250V200" stroke="#000000" stroke-width="2"/>
+  <circle cx="200" cy="190" r="10" fill="#000000"/>
+  <path d="M200 200L185 220" stroke="#000000" stroke-width="2"/>
+  <path d="M200 200L215 220" stroke="#000000" stroke-width="2"/>
+  <path d="M200 220L190 250" stroke="#000000" stroke-width="2"/>
+  <path d="M200 220L210 250" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Scientific Elements -->
+  <circle cx="50" cy="50" r="20" fill="none" stroke="#2196F3" stroke-width="2"/>
+  <path d="M40 50H60" stroke="#2196F3" stroke-width="2"/>
+  <path d="M50 40V60" stroke="#2196F3" stroke-width="2"/>
+  
+  <rect x="300" y="150" width="40" height="60" fill="none" stroke="#2196F3" stroke-width="2"/>
+  <path d="M300 170H340" stroke="#2196F3" stroke-width="2"/>
+  <path d="M300 190H340" stroke="#2196F3" stroke-width="2"/>
+  <path d="M300 210H340" stroke="#2196F3" stroke-width="2"/>
+</svg>

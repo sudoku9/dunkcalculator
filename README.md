@@ -1,51 +1,92 @@
-# Basketball Shot Calculator
+# Dunk Calculator
 
-A web-based calculator that helps basketball players optimize their shooting mechanics by calculating the ideal trajectory parameters for successful shots.
+An advanced basketball dunk calculator web application built with Vue.js.
 
 ## Features
 
-- Calculate initial velocity needed for successful shots
-- Determine flight time of the basketball
-- Compute maximum height of shot trajectory
-- Input customization:
-  - Shot distance (in feet)
-  - Release height (in feet)
-  - Release angle (in degrees)
+- **Basic Calculation Features**:
+  - Vertical jump height calculation
+  - Running jump height calculation
+  - Required arm span calculation
+  - Dunk type recommendations
 
-## Technical Details
+- **Required Parameters**:
+  - Height
+  - Weight
+  - Standing reach
+  - Running reach
+  - Arm length
+  - Hand size
 
-This calculator takes into account:
-- Standard basketball hoop height (10 feet)
-- Gravitational acceleration (32.2 ft/s²)
-- Projectile motion physics
+- **Advanced Parameters**:
+  - Runup steps
+  - Takeoff angle
+  - Core strength index
+  - Knee bend angle
 
-## How to Use
+- **Basic Calculation Modules**:
+  - Dunk probability percentage
+  - Height improvement needed
+  - Optimal takeoff point calculation
 
-1. Enter the distance from the basket (in feet)
-2. Input your release height (in feet)
-3. Set your preferred release angle (in degrees)
-4. Click "Calculate" to see results
+- **Training Guidance Module**:
+  - Automatically generated training recommendations
+  - Vertical jump improvement methods
+  - Technical tips for different dunk types
 
-The calculator will display:
-- Required initial velocity (ft/s)
-- Total flight time (seconds)
-- Maximum height reached (feet)
+- **Data Visualization**:
+  - Dunk trajectory simulation
+  - Body data analysis charts
 
-## Technology Stack
+- **Precision Enhancements**:
+  - Air resistance consideration
+  - Runup speed impact
+  - Hand grip factor analysis
+
+- **User Experience Optimization**:
+  - Simplified input process
+  - Intuitive result display
+  - Interactive training guidance
+
+- **Advanced Features**:
+  - 3D model demonstration
+  - Personalized training plan generation
+  - Social sharing functionality
+
+## Project Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Technologies Used
 
 - Vue.js 3
 - Vite
-- HTML/CSS
-- JavaScript
+- Chart.js
+- Three.js
 
-## Live Demo
+## Project Structure
 
-[Dunk Calculator](https://www.dunkcalculator.app) "Best Free Dunk Calculator Online"<!-- Add your deployed URL here when available -->
+- `src/components/` - Vue components
+- `src/views/` - Page views
+- `src/utils/` - Utility functions
+- `src/assets/` - Static assets
 
 ## License
 
-MIT License
+MIT
 
 ## Author
 
-[Alex] <!-- Add your name or GitHub username -->
+Dunk Calculator Team
