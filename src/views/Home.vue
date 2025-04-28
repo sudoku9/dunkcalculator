@@ -152,7 +152,7 @@
             </div>
             <div class="testimonial-author">
               <div class="author-image">
-                <img src="../assets/placeholder.svg" alt="Coach Wilson" />
+                <img src="../assets/testimonial3.svg" alt="Coach Wilson" />
               </div>
               <div class="author-info">
                 <h4>Coach Wilson</h4>
