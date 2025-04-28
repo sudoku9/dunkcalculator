@@ -200,8 +200,8 @@ export default {
             },
             {
               quote: {
-                text: "The vertical jump is not just about leg strength—it"s about how efficiently you can coordinate all the muscles in your body to work together in a split second.",
-                author: 'Dr. Peter Vint, Sports Biomechanist"
+                text: "The vertical jump is not just about leg strength—it's about how efficiently you can coordinate all the muscles in your body to work together in a split second.",
+                author: "Dr. Peter Vint, Sports Biomechanist"
               }
             },
             {
