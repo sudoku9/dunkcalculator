@@ -40,7 +40,7 @@ The calculator will display:
 
 ## Live Demo
 
-[Dunk Calculator](https://www.dunkcalculator.app) "Best Free Dunk Calculator Online")<!-- Add your deployed URL here when available -->
+[Dunk Calculator](https://www.dunkcalculator.app) "Best Free Dunk Calculator Online"<!-- Add your deployed URL here when available -->
 
 ## License
 
