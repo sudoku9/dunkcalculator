@@ -38,22 +38,9 @@ The calculator will display:
 - HTML/CSS
 - JavaScript
 
-## Local Development
-
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
 ## Live Demo
 
-[dunk calculator](https://www.dunkcalculator.app) "Dunk Calculator")<!-- Add your deployed URL here when available -->
+[Dunk Calculator](https://www.dunkcalculator.app) "Best Free Dunk Calculator Online")<!-- Add your deployed URL here when available -->
 
 ## License
 
