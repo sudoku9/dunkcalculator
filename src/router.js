@@ -9,6 +9,11 @@ import ArticleDetail from './views/ArticleDetail.vue'
 import About from './views/About.vue'
 import PrivacyPolicy from './views/PrivacyPolicy.vue'
 import TermsOfService from './views/TermsOfService.vue'
+import TestPage from './views/TestPage.vue'
+import SimpleArticles from './views/SimpleArticles.vue'
+import SimpleArticleDetail from './views/SimpleArticleDetail.vue'
+import NewArticles from './views/NewArticles.vue'
+import NewArticleDetail from './views/NewArticleDetail.vue'
 
 const routes = [
   {
@@ -73,6 +78,46 @@ const routes = [
     component: TermsOfService,
     meta: {
       title: 'Terms of Service | Dunk Calculator'
+    }
+  },
+  {
+    path: '/test',
+    name: 'TestPage',
+    component: TestPage,
+    meta: {
+      title: 'Test Page | Dunk Calculator'
+    }
+  },
+  {
+    path: '/simple-articles',
+    name: 'SimpleArticles',
+    component: SimpleArticles,
+    meta: {
+      title: 'Simple Articles | Dunk Calculator'
+    }
+  },
+  {
+    path: '/simple-articles/:id',
+    name: 'SimpleArticleDetail',
+    component: SimpleArticleDetail,
+    meta: {
+      title: 'Article | Dunk Calculator'
+    }
+  },
+  {
+    path: '/new-articles',
+    name: 'NewArticles',
+    component: NewArticles,
+    meta: {
+      title: 'Basketball Articles | Dunk Calculator'
+    }
+  },
+  {
+    path: '/new-articles/:id',
+    name: 'NewArticleDetail',
+    component: NewArticleDetail,
+    meta: {
+      title: 'Article | Dunk Calculator'
     }
   }
 ]

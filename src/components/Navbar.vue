@@ -5,18 +5,18 @@
         <img src="../assets/logo.svg" alt="Dunk Calculator Logo" class="logo-img" />
         <span class="logo-text">Dunk Calculator</span>
       </router-link>
-      
+
       <div class="navbar-toggle" @click="toggleMenu">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      
+
       <ul class="navbar-menu" :class="{ 'active': menuActive }">
         <li><router-link to="/" @click="closeMenu">Home</router-link></li>
         <li><router-link to="/calculator" @click="closeMenu">Calculator</router-link></li>
         <li><router-link to="/training" @click="closeMenu">Training Guide</router-link></li>
-        <li><router-link to="/articles" @click="closeMenu">Articles</router-link></li>
+        <li><router-link to="/new-articles" @click="closeMenu">Articles</router-link></li>
         <li><router-link to="/about" @click="closeMenu">About</router-link></li>
       </ul>
     </div>
@@ -121,7 +121,7 @@ export default {
   .navbar-toggle {
     display: flex;
   }
-  
+
   .navbar-menu {
     position: absolute;
     top: 70px;
@@ -136,12 +136,12 @@ export default {
     transition: all 0.3s;
     z-index: 999;
   }
-  
+
   .navbar-menu.active {
     transform: translateY(0);
     opacity: 1;
   }
-  
+
   .navbar-menu li {
     margin: 15px 0;
   }

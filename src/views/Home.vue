@@ -178,7 +178,7 @@
             <div class="article-content">
               <h3>The Science of Vertical Jump</h3>
               <p>Explore the biomechanics and physics behind an explosive vertical jump</p>
-              <router-link to="/articles/vertical-jump-science" class="article-link">Read More</router-link>
+              <router-link to="/new-articles/vertical-jump-science" class="article-link">Read More</router-link>
             </div>
           </div>
 
@@ -189,7 +189,7 @@
             <div class="article-content">
               <h3>NBA Dunkers Analysis</h3>
               <p>Data-driven analysis of the best NBA dunkers and their physical attributes</p>
-              <router-link to="/articles/nba-dunkers" class="article-link">Read More</router-link>
+              <router-link to="/new-articles/nba-dunkers" class="article-link">Read More</router-link>
             </div>
           </div>
 
@@ -200,13 +200,13 @@
             <div class="article-content">
               <h3>Plyometric Training Guide</h3>
               <p>Comprehensive guide to plyometric exercises for improving your vertical jump</p>
-              <router-link to="/articles/plyometric-training" class="article-link">Read More</router-link>
+              <router-link to="/new-articles/plyometric-training" class="article-link">Read More</router-link>
             </div>
           </div>
         </div>
 
         <div class="cta-container">
-          <router-link to="/articles" class="btn btn-secondary">View All Articles</router-link>
+          <router-link to="/new-articles" class="btn btn-secondary">View All Articles</router-link>
         </div>
       </div>
     </section>
