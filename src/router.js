@@ -9,9 +9,7 @@ import ArticleDetail from './views/ArticleDetail.vue'
 import About from './views/About.vue'
 import PrivacyPolicy from './views/PrivacyPolicy.vue'
 import TermsOfService from './views/TermsOfService.vue'
-import TestPage from './views/TestPage.vue'
-import SimpleArticles from './views/SimpleArticles.vue'
-import SimpleArticleDetail from './views/SimpleArticleDetail.vue'
+// TestPage and SimpleArticles components are removed as they don't exist in the repository
 import NewArticles from './views/NewArticles.vue'
 import NewArticleDetail from './views/NewArticleDetail.vue'
 
@@ -80,30 +78,7 @@ const routes = [
       title: 'Terms of Service | Dunk Calculator'
     }
   },
-  {
-    path: '/test',
-    name: 'TestPage',
-    component: TestPage,
-    meta: {
-      title: 'Test Page | Dunk Calculator'
-    }
-  },
-  {
-    path: '/simple-articles',
-    name: 'SimpleArticles',
-    component: SimpleArticles,
-    meta: {
-      title: 'Simple Articles | Dunk Calculator'
-    }
-  },
-  {
-    path: '/simple-articles/:id',
-    name: 'SimpleArticleDetail',
-    component: SimpleArticleDetail,
-    meta: {
-      title: 'Article | Dunk Calculator'
-    }
-  },
+  // TestPage and SimpleArticles routes are removed as they don't exist in the repository
   {
     path: '/new-articles',
     name: 'NewArticles',
