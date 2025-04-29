@@ -30,7 +30,7 @@
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/calculator">Calculator</router-link></li>
             <li><router-link to="/training">Training Guide</router-link></li>
-            <li><router-link to="/articles">Articles</router-link></li>
+            <li><router-link to="/new-articles">Articles</router-link></li>
             <li><router-link to="/about">About</router-link></li>
           </ul>
         </div>
@@ -38,10 +38,10 @@
         <div class="footer-section">
           <h3>Resources</h3>
           <ul class="footer-links">
-            <li><router-link to="/articles/vertical-jump-science">Vertical Jump Science</router-link></li>
-            <li><router-link to="/articles/dunking-techniques">Dunking Techniques</router-link></li>
-            <li><router-link to="/articles/training-programs">Training Programs</router-link></li>
-            <li><router-link to="/articles/nba-dunkers">NBA Dunkers Analysis</router-link></li>
+            <li><router-link to="/new-articles/vertical-jump-science">Vertical Jump Science</router-link></li>
+            <li><router-link to="/new-articles/dunking-techniques">Dunking Techniques</router-link></li>
+            <li><router-link to="/new-articles/training-programs">Training Programs</router-link></li>
+            <li><router-link to="/new-articles/nba-dunkers">NBA Dunkers Analysis</router-link></li>
           </ul>
         </div>
 
