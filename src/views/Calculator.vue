@@ -5,7 +5,16 @@
         <h1>Basketball Dunk Calculator</h1>
         <p>Calculate your dunking potential with our advanced scientific calculator</p>
       </div>
-      
+
+      <!-- Main Calculator Component -->
+      <div class="calculator-wrapper">
+        <DunkCalculator />
+      </div>
+
+      <div class="section-divider">
+        <h2 class="section-title">Learn More About Our Calculator</h2>
+      </div>
+
       <div class="calculator-intro">
         <div class="intro-content">
           <h2>How Our Calculator Works</h2>
@@ -31,14 +40,11 @@
           <img src="../assets/calculator-intro.svg" alt="Basketball player measuring vertical jump" />
         </div>
       </div>
-      
-      <!-- Main Calculator Component -->
-      <DunkCalculator />
-      
+
       <!-- FAQ Section -->
       <div class="faq-section">
         <h2>Frequently Asked Questions</h2>
-        
+
         <div class="faq-item">
           <div class="faq-question" @click="toggleFaq(1)">
             <h3>How accurate is the dunk calculator?</h3>
@@ -54,7 +60,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="faq-item">
           <div class="faq-question" @click="toggleFaq(2)">
             <h3>How much vertical jump do I need to dunk?</h3>
@@ -75,7 +81,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="faq-item">
           <div class="faq-question" @click="toggleFaq(3)">
             <h3>How long does it take to improve vertical jump?</h3>
@@ -99,7 +105,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="faq-item">
           <div class="faq-question" @click="toggleFaq(4)">
             <h3>Can short people dunk?</h3>
@@ -122,7 +128,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="faq-item">
           <div class="faq-question" @click="toggleFaq(5)">
             <h3>What are the best exercises to increase vertical jump?</h3>
@@ -194,10 +200,42 @@ export default {
   margin: 0 auto;
 }
 
+.calculator-wrapper {
+  margin-bottom: 30px;
+}
+
+.section-divider {
+  text-align: center;
+  margin: 50px 0 30px;
+  position: relative;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  z-index: 1;
+}
+
+.section-title {
+  display: inline-block;
+  background-color: var(--bg-color);
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+}
+
 .calculator-intro {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-top: 50px;
   margin-bottom: 50px;
   background-color: white;
   border-radius: var(--border-radius);
@@ -329,7 +367,7 @@ export default {
   .calculator-intro {
     flex-direction: column;
   }
-  
+
   .intro-image {
     order: -1;
     margin-bottom: 20px;
@@ -340,15 +378,19 @@ export default {
   .calculator-page {
     padding: 40px 0;
   }
-  
+
   .page-header h1 {
     font-size: 2rem;
   }
-  
+
   .page-header p {
     font-size: 1rem;
   }
-  
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
   .intro-content h2 {
     font-size: 1.5rem;
   }
